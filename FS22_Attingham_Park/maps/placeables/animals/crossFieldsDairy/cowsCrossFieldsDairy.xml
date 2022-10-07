@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="cowHusbandry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_cowsCrossFieldsDairy</name>
+        <image>maps/placeables/storeImage/cowsCFD.dds</image>
+        <price>75000</price>
+        <functions>
+            <function>$l10n_function_animalPenCow</function>
+        </functions>
+        <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <dailyUpkeep>75</dailyUpkeep>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>animalpens</category>
+        <brush>
+            <type>placeable</type>
+            <category>animals</category>
+            <tab>cows</tab>
+        </brush>
+
+        <storeIconRendering>
+            <settings cameraXRot="-20" cameraYRot="50" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>1939968</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>290816</indexBufferMemoryUsage>
+        <textureMemoryUsage>12713984</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <boughtWithFarmland>true</boughtWithFarmland>		
+        <filename>maps/placeables/animals/crossFieldsDairy/cowsCrossFieldsDairy.i3d</filename>
+        <canBeRenamed>false</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+            <placeLayered template="cowLayer" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="dirt"/>
+        </levelAreas>
+
+        <paintAreas>
+            <paintArea startNode="paintArea1Start" widthNode="paintArea1Width" heightNode="paintArea1Height" groundType="grass" />
+        </paintAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height" />
+    </indoorAreas>
+
+    <foliageAreas>
+        <foliageArea startNode="foliageArea1Start" widthNode="foliageArea1Width" heightNode="foliageArea1Height" decoFoliage="grassShort" />
+        <foliageArea startNode="foliageArea2Start" widthNode="foliageArea2Width" heightNode="foliageArea2Height" decoFoliage="grassShort" />
+        <foliageArea startNode="foliageArea3Start" widthNode="foliageArea3Width" heightNode="foliageArea3Height" decoFoliage="grassShort" />
+    </foliageAreas>
+
+    <triggerMarkers>
+        <triggerMarker node="markerFood" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" />
+        <triggerMarker node="markerAnimals" filename="$data/shared/assets/marker/markerIcons.xml" id="ANIMALS" />
+        <triggerMarker node="markerMilk" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
+        <triggerMarker node="markerLiquidManure" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
+    </triggerMarkers>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <hotspots>
+        <hotspot type="COW" teleportNode="teleportNode" />
+    </hotspots>
+	
+    <animatedObjects>
+<animatedObject saveId="gateCF1">
+		<controls triggerNode="trigger1" posAction="ACTIVATE_HANDTOOL" posText="openGate" negText="closeGate" />
+          <sounds>
+                <moving file="maps/sounds/click6.ogg" loops="0" volume="0.8" radius="25" innerRadius="3" fadeOu="0.25"/>
+            </sounds>		
+        <animation initialTime="0" duration="5">
+	        <part node="gate1">
+                <keyFrame time="0.00" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 -90 0"  />
+            </part>
+        </animation>
+	</animatedObject> 	
+		<animatedObject saveId="gateCF2">
+		<controls triggerNode="trigger2" posAction="ACTIVATE_HANDTOOL" posText="openGate" negText="closeGate" />
+          <sounds>
+                <moving file="maps/sounds/click6.ogg" loops="0" volume="0.8" radius="25" innerRadius="3" fadeOu="0.25"/>
+            </sounds>		
+        <animation initialTime="0" duration="5">
+	        <part node="gate2">
+                <keyFrame time="0.00" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 130 0"  />
+            </part>
+        </animation>
+	</animatedObject> 
+<animatedObject saveId="gateCF3">
+		<controls triggerNode="trigger3" posAction="ACTIVATE_HANDTOOL" posText="openGate" negText="closeGate" />
+          <sounds>
+                <moving file="maps/sounds/click6.ogg" loops="0" volume="0.8" radius="25" innerRadius="3" fadeOu="0.25"/>
+            </sounds>		
+        <animation initialTime="0" duration="5">
+	        <part node="gate3">
+                <keyFrame time="0.00" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 -90 0"  />
+            </part>
+        </animation>
+	</animatedObject> 	
+		<animatedObject saveId="gateCF4">
+		<controls triggerNode="trigger4" posAction="ACTIVATE_HANDTOOL" posText="openGate" negText="closeGate" />
+          <sounds>
+                <moving file="maps/sounds/click6.ogg" loops="0" volume="0.8" radius="25" innerRadius="3" fadeOu="0.25"/>
+            </sounds>		
+        <animation initialTime="0" duration="5">
+	        <part node="gate4">
+                <keyFrame time="0.00" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 130 0"  />
+            </part>
+        </animation>
+	</animatedObject> 
+		<animatedObject saveId="gateCF5">
+		<controls triggerNode="trigger5" posAction="ACTIVATE_HANDTOOL" posText="openGate" negText="closeGate" />
+          <sounds>
+                <moving file="maps/sounds/click6.ogg" loops="0" volume="0.8" radius="25" innerRadius="3" fadeOu="0.25"/>
+            </sounds>		
+        <animation initialTime="0" duration="5">
+	        <part node="gate5">
+                <keyFrame time="0.00" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 108 0"  />
+            </part>
+        </animation>
+	</animatedObject> 
+<animatedObject saveId="gateCF6">
+		<controls triggerNode="trigger6" posAction="ACTIVATE_HANDTOOL" posText="openGate" negText="closeGate" />
+          <sounds>
+                <moving file="maps/sounds/click6.ogg" loops="0" volume="0.8" radius="25" innerRadius="3" fadeOu="0.25"/>
+            </sounds>		
+        <animation initialTime="0" duration="5">
+	        <part node="gate6">
+                <keyFrame time="0.00" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 90 0"  />
+            </part>
+        </animation>
+	</animatedObject> 	
+		<animatedObject saveId="gateCF7">
+		<controls triggerNode="trigger7" posAction="ACTIVATE_HANDTOOL" posText="closeGate" negText="openGate" />
+          <sounds>
+                <moving file="maps/sounds/gate_loop.wav" loops="0" linkNode="gate7" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="maps/sounds/gate_opened.wav" linkNode="1" volume="0.8" radius="25" innerRadius="3" />
+                <negEnd file="maps/sounds/gate_closed.wav" linkNode="1" volume="0.8" radius="25" innerRadius="3" />
+            </sounds>		
+        <animation initialTime="0" duration="5">
+	        <part node="gate7">
+                <keyFrame time="0.00" rotation="0 108 0" />
+                <keyFrame time="1" rotation="0 0 0"  />
+            </part>
+        </animation>
+	</animatedObject> 
+</animatedObjects>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <husbandry saveId="Animals_COW" hasStatistics="false">
+        <storage node="storage" fillTypes="LIQUIDMANURE MILK STRAW MANURE" isExtension="false">
+            <capacity fillType="LIQUIDMANURE" capacity="200000" />
+            <capacity fillType="MILK" capacity="120000" />
+            <capacity fillType="STRAW" capacity="80000" />
+            <capacity fillType="MANURE" capacity="0" />
+        </storage>
+
+        <unloadingStation supportsExtension="true" storageRadius="250" hideFromPricesMenu="true">
+            <unloadTrigger exactFillRootNode="exactFillRootNodeStraw" fillTypes="STRAW" />
+            <unloadTrigger fillTypes="MANURE MILK LIQUIDMANURE STRAW" />
+        </unloadingStation>
+
+        <loadingStation supportsExtension="true" storageRadius="250">
+            <loadTrigger triggerNode="lqiuidManureTrigger" fillTypes="LIQUIDMANURE" fillLitersPerSecond="2000" aiNode="aiLoadingNodeLiquidManure" />
+            <loadTrigger triggerNode="milkTrigger" fillTypes="MILK" fillLitersPerSecond="2000" />
+        </loadingStation>
+
+        <animals type="COW" maxNumAnimals="300" maxNumVisualAnimals="40">
+            <navigation rootNode="navigationRootNode" filename="maps/placeables/animals/crossFieldsDairy/cowsCrossFieldsDairyNavMesh.i3d" />
+            <loadingTrigger node="loadingTrigger" />
+        </animals>
+		
+        <straw>
+            <manure factor="1.5" />
+            <strawPlane node="strawPlane" minY="0" maxY="0.24" colorChange="false" />
+        </straw>
+		
+        <liquidManure />
+
+        <food capacity="120000" >
+            <foodPlaces>
+                <foodPlace node="foodPlace1" />
+                <foodPlace node="foodPlace2" />
+            </foodPlaces>
+            <foodPlane node="foodPlane" minY="-0.196" maxY="0.142" changeVisibility="true" defaultFillType="FORAGE"/>
+            <feedingTrough exactFillRootNode="exactFillRootNodeFood" aiNode="foodAINode">
+                <baleTrigger triggerNode="baleTrigger"/>
+            </feedingTrough>
+        </food>
+
+        <milk />
+
+        <water automaticWaterSupply="true" />
+
+    </husbandry>
+
+    <i3dMappings>
+        <i3dMapping id="teleportNode" node="0>0" />
+        <i3dMapping id="foodPlane" node="0>1|0" />
+        <i3dMapping id="exactFillRootNodeFood" node="0>1|1" />
+        <i3dMapping id="baleTrigger" node="0>1|2" />
+        <i3dMapping id="foodPlace1" node="0>1|3|0" />
+        <i3dMapping id="foodPlace2" node="0>1|3|1" />
+        <i3dMapping id="foodAINode" node="0>1|4" />
+        <i3dMapping id="strawPlane" node="0>2|0" />
+        <i3dMapping id="exactFillRootNodeStraw" node="0>2|1" />
+        <i3dMapping id="storage" node="0>3" />
+        <i3dMapping id="milkTrigger" node="0>4|0" />
+        <i3dMapping id="lqiuidManureTrigger" node="0>5|0" />
+        <i3dMapping id="aiLoadingNodeLiquidManure" node="0>5|1" />
+        <i3dMapping id="waterPlace1" node="0>6|0|0" />
+        <i3dMapping id="waterPlace2" node="0>6|0|1" />
+        <i3dMapping id="navigationRootNode" node="0>7" />
+        <i3dMapping id="markerMilk" node="0>8|0" />
+        <i3dMapping id="markerAnimals" node="0>8|1" />
+        <i3dMapping id="markerLiquidManure" node="0>8|2" />
+        <i3dMapping id="markerFood" node="0>8|3" />
+        <i3dMapping id="infoTrigger" node="0>9" />
+        <i3dMapping id="loadingTrigger" node="0>10" />
+        <i3dMapping id="clearArea1Start" node="0>11|0" />
+        <i3dMapping id="clearArea1Width" node="0>11|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>11|0|1" />
+        <i3dMapping id="foliageArea1Start" node="0>12|0" />
+        <i3dMapping id="foliageArea1Width" node="0>12|0|0" />
+        <i3dMapping id="foliageArea1Height" node="0>12|0|1" />
+        <i3dMapping id="foliageArea2Start" node="0>12|1" />
+        <i3dMapping id="foliageArea2Width" node="0>12|1|0" />
+        <i3dMapping id="foliageArea2Height" node="0>12|1|1" />
+        <i3dMapping id="foliageArea3Start" node="0>12|2" />
+        <i3dMapping id="foliageArea3Width" node="0>12|2|0" />
+        <i3dMapping id="foliageArea3Height" node="0>12|2|1" />
+        <i3dMapping id="levelArea1Start" node="0>13|0" />
+        <i3dMapping id="levelArea1Width" node="0>13|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>13|0|1" />
+        <i3dMapping id="paintArea1Start" node="0>14|0" />
+        <i3dMapping id="paintArea1Width" node="0>14|0|0" />
+        <i3dMapping id="paintArea1Height" node="0>14|0|1" />
+        <i3dMapping id="testArea1Start" node="0>15|0" />
+        <i3dMapping id="testArea1End" node="0>15|0|0" />
+        <i3dMapping id="indoorArea1Start" node="0>16|0" />
+        <i3dMapping id="indoorArea1Width" node="0>16|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>16|0|1" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>17|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>17|0|0" />
+        <i3dMapping id="trigger1" node="0>19|0|0" />
+        <i3dMapping id="gate1" node="0>19|0|1" />
+        <i3dMapping id="trigger2" node="0>19|1|0" />
+        <i3dMapping id="gate2" node="0>19|1|1" />
+        <i3dMapping id="trigger3" node="0>19|2|0" />
+        <i3dMapping id="gate3" node="0>19|2|1" />
+        <i3dMapping id="trigger4" node="0>19|3|0" />
+        <i3dMapping id="gate4" node="0>19|3|1" />
+        <i3dMapping id="trigger5" node="0>19|4|0" />
+        <i3dMapping id="gate5" node="0>19|4|1" />
+        <i3dMapping id="trigger6" node="0>19|5|0" />
+        <i3dMapping id="gate6" node="0>19|5|1" />
+        <i3dMapping id="trigger7" node="0>19|6|0" />
+        <i3dMapping id="gate7" node="0>19|6|1" />
+    </i3dMappings>
+</placeable>
