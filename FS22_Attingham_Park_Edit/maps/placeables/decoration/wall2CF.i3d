@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+    </Asset>
+    <Files>
+        <File fileId="4" filename="../../textures/MetalPainted0019_S.jpg"/>
+        <File fileId="5" filename="../../textures/MetalPainted0019_S_spec.dds"/>
+        <File fileId="1" filename="../../textures/concrete.dds"/>
+        <File fileId="2" filename="../../textures/concrete_spec.dds"/>
+        <File fileId="3" filename="../../textures/wall_white_dirty.dds"/>
+    </Files>
+    <Materials>
+        <Material name="02 - Default" materialId="10">
+            <Texture fileId="4"/>
+            <Glossmap fileId="5"/>
+        </Material>
+        <Material name="04 - Default" materialId="13">
+            <Texture fileId="3"/>
+        </Material>
+        <Material name="UnnamedMaterial" materialId="638">
+            <Texture fileId="1"/>
+            <Glossmap fileId="2"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="wall2CF.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="wall2CF" nodeId="65075">
+            <TransformGroup name="clearAreas" nodeId="65076">
+                <TransformGroup name="clearArea1Start" nodeId="65077">
+                    <TransformGroup name="clearArea1Width" nodeId="65078"/>
+                    <TransformGroup name="clearArea1Height" nodeId="65079"/>
+                </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="levelAreas" nodeId="65080">
+                <TransformGroup name="levelArea1Start" nodeId="65081">
+                    <TransformGroup name="levelArea1Width" nodeId="65082"/>
+                    <TransformGroup name="levelArea1Height" nodeId="65083"/>
+                </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="indoorAreas" nodeId="65084">
+                <TransformGroup name="indoorArea1Start" nodeId="65085">
+                    <TransformGroup name="indoorArea1Width" nodeId="65086"/>
+                    <TransformGroup name="indoorArea1Height" nodeId="65087"/>
+                </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="testAreas" nodeId="65088">
+                <TransformGroup name="testArea1Start" nodeId="65089">
+                    <TransformGroup name="testArea1End" nodeId="65090"/>
+                </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="tipOcclusionUpdateAreas" nodeId="65091">
+                <TransformGroup name="tipOcclusionUpdateArea1Start" translation="10.0366 -4.76837e-07 4.08469" nodeId="65092">
+                    <TransformGroup name="tipOcclusionUpdateArea1End" translation="47.1257 4.76837e-07 14.9952" nodeId="65093"/>
+                </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="tipCollisions" nodeId="65094">
+                <Shape shapeId="1" name="col7" translation="766.407 49.3581 273.524" rotation="-180 -45 180" scale="0.961062 1.23492 1.79954" static="true" collisionMask="524288" clipDistance="1" nodeId="51169" materialIds="638" nonRenderable="true" distanceBlending="false" buildNavMeshMask="255"/>
+                <Shape shapeId="1" name="col8" translation="789.617 49.3934 250.314" rotation="-180 -45 180" scale="0.577695 1.23492 1.79954" static="true" collisionMask="524288" clipDistance="1" nodeId="51170" materialIds="638" nonRenderable="true" distanceBlending="false" buildNavMeshMask="255"/>
+                <Shape shapeId="1" name="col9" translation="798.842 49.3838 249.262" rotation="2.83878e-06 -45 -2.15699e-06" scale="0.46746 1.23492 1.79954" static="true" collisionMask="524288" clipDistance="1" nodeId="51171" materialIds="638" nonRenderable="true" distanceBlending="false" buildNavMeshMask="255"/>
+            </TransformGroup>
+            <TransformGroup name="visuals" nodeId="65095">
+                <Shape shapeId="2" name="wall01" translation="802.892 52.8896 253.631" rotation="180 45 -9.73145e-06" scale="1.5 1.53 1.70667" static="true" clipDistance="500" nodeId="65096" materialIds="13" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="3" name="girder" translation="802.892 47.6766 253.631" rotation="-5.00896e-06 -45 2.07478e-06" scale="2 2 1.5" static="true" clipDistance="500" nodeId="65097" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="2" name="wall01" translation="784.645 52.8896 255.293" rotation="180 -45 2.07478e-06" scale="1.5 1.53 2.00874" static="true" clipDistance="500" nodeId="65098" materialIds="13" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="2" name="wall01" translation="766.353 52.8896 273.584" rotation="180 -45 2.07478e-06" scale="1.5 1.53 1.70667" static="true" clipDistance="500" nodeId="65099" materialIds="13" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="2" name="wall01" translation="757.86 52.8896 282.077" rotation="180 -45 2.07478e-06" scale="1.5 1.53 1.70667" static="true" clipDistance="500" nodeId="65100" materialIds="13" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="3" name="girder" translation="766.353 47.6766 273.584" rotation="-180 -45 180" scale="1.99999 2 1.5" static="true" clipDistance="500" nodeId="65101" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="3" name="girder" translation="757.86 47.6766 282.077" rotation="-180 -45 180" scale="1.99999 2 1.5" static="true" clipDistance="500" nodeId="65102" materialIds="10" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="collision" nodeId="65103"/>
+        </TransformGroup>
+    </Scene>
+    <UserAttributes>
+        <UserAttribute nodeId="51169">
+            <Attribute name="collisionHeight" type="float" value="3"/>
+        </UserAttribute>
+        <UserAttribute nodeId="51170">
+            <Attribute name="collisionHeight" type="float" value="3"/>
+        </UserAttribute>
+        <UserAttribute nodeId="51171">
+            <Attribute name="collisionHeight" type="float" value="3"/>
+        </UserAttribute>
+    </UserAttributes>
+</i3D>

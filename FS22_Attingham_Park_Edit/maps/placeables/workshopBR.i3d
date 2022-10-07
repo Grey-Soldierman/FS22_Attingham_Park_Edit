@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="8" filename="../textures/compressor_diff.png"/>
+    <File fileId="5" filename="../textures/fs19/cabinetWorkbench_diffuse.png"/>
+    <File fileId="6" filename="../textures/fs19/cabinetWorkbench_normal.png"/>
+    <File fileId="7" filename="../textures/fs19/cabinetWorkbench_specular.png"/>
+    <File fileId="9" filename="../textures/wheelGun_diff.png"/>
+    <File fileId="1" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
+    <File fileId="2" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
+    <File fileId="3" filename="$data/maps/textures/shared/warningStripes_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="cabinetWorkbench_mat" materialId="44">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="compressor_mat" materialId="45">
+      <Texture fileId="8"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="6">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="wheelGun_mat" materialId="46">
+      <Texture fileId="9"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="workshopBR.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="workshopBR" rotation="-2.64916e-05 0 -2.64624e-05" nodeId="14">
+        <TransformGroup name="workshop" nodeId="15">
+          <TransformGroup name="markerWrench" translation="-1.577 0.0234985 -1.08113" nodeId="16"/>
+          <Shape shapeId="1" name="warningStripes" translation="2.13597 -0.011238 3.46444" rotation="6.10666e-13 2.11698e-11 0.156266" clipDistance="100" nodeId="17" materialIds="6" receiveShadows="true"/>
+          <Shape shapeId="2" name="vehicleTrigger" translation="0 0 -2.48137" scale="1 1 1.79927" static="true" trigger="true" collisionMask="2097152" clipDistance="300" nodeId="18" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="3" name="playerTrigger" translation="-1.577 0.0234985 -1.08113" static="true" trigger="true" collisionMask="3145728" clipDistance="300" nodeId="19" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="clearAreas" nodeId="20">
+          <TransformGroup name="clearArea1Start" translation="7.39339 0 -5.03014" nodeId="21">
+            <TransformGroup name="clearArea1Width" translation="0 0 14.8672" nodeId="22"/>
+            <TransformGroup name="clearArea1Height" translation="-14.8561 0 0" nodeId="23"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="24">
+          <TransformGroup name="levelArea1Start" translation="-8.25 0 -5.95766" nodeId="25">
+            <TransformGroup name="levelArea1Width" translation="0 0 16.092" nodeId="26"/>
+            <TransformGroup name="levelArea1Height" translation="16.5 0 0" nodeId="27"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" nodeId="28">
+          <TransformGroup name="indoorArea1Start" translation="-0.362 0.0234985 -1.66989" nodeId="29">
+            <TransformGroup name="indoorArea1Width" translation="-0.362 0.0234985 -1.66989" nodeId="30"/>
+            <TransformGroup name="indoorArea1Height" translation="-0.362 0.0234985 -1.66989" nodeId="31"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="32">
+          <TransformGroup name="testArea1Start" translation="8.03774 -0 -5.42375" nodeId="33">
+            <TransformGroup name="testArea1End" translation="-16.169 6.11923 15.6511" nodeId="34"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="35">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-7.83806 0 -5.44015" nodeId="36">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="15.449 0 17.7954" nodeId="37"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape shapeId="4" name="cabinetWorkbenchTable04" translation="-1.47447 -0.00886154 -2.41608" rotation="2.91947e-08 -0 -8.62255e-12" static="true" clipDistance="129" nodeId="55" materialIds="44" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="compressor" translation="-2.56855 0.089706 0.298225" rotation="2.6549e-11 -90 -1.36609e-05" nodeId="56">
+            <Shape shapeId="5" name="compressor" translation="0 -0.0916647 -5.32266" static="true" clipDistance="80" nodeId="57" materialIds="45" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="6" name="wheelGun" translation="0 -0.0824812 -5.3224" static="true" clipDistance="80" nodeId="58" materialIds="46" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

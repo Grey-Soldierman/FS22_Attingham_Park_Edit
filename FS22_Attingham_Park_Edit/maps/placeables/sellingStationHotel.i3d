@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sellingStationHotel.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="sellingStationHotel" nodeId="8">
+        <TransformGroup name="sellingStationGrain" translation="3.90643 -0.196656 -1.38842" rotation="-180 33.6107 -180" nodeId="9">
+          <Shape shapeId="1" name="unloadTriggerGrain" translation="0.44083 0.901616 2.73504" rotation="-180 -88.0457 180" scale="1 1.60572 0.256856" static="true" collisionMask="1073741824" nodeId="10" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="unloadTriggerMarkerGrain" translation="0 0 3.12553" nodeId="11"/>
+          <TransformGroup name="unloadTriggerAINode" translation="2.64825e-07 0 3.02925" rotation="0 180 0" nodeId="12"/>
+        </TransformGroup>
+        <TransformGroup name="sellingStationProducts" translation="2.65204 0.0826416 -5.7027" rotation="0 -34.784 0" nodeId="13">
+          <Shape shapeId="1" name="unloadTriggerProducts" static="true" collisionMask="1073741824" nodeId="14" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="2" name="baleTriggerProducts" translation="0 1 0" static="true" trigger="true" collisionMask="16781312" nodeId="15" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="unloadTriggerMarkerProducts" translation="-0.00293525 0.697475 -0.125711" rotation="0 90 0" nodeId="16"/>
+        </TransformGroup>
+        <TransformGroup name="hotspotNode" translation="-0.0368911 -9.09495e-15 0.0421221" rotation="0 90 0" nodeId="17"/>
+        <TransformGroup name="teleportNode" translation="-3.76556 0.0438805 -5.67987" rotation="-0 90 0" nodeId="18"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

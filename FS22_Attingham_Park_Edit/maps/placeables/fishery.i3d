@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="../textures/fs19/defaultPlastic_specular.png"/>
+    <File fileId="2" filename="../textures/fs19/default_normal.png"/>
+    <File fileId="1" filename="../textures/fishery.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert2" materialId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="fishery.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="fishery" nodeId="7">
+        <TransformGroup name="clearAreas" nodeId="8">
+          <TransformGroup name="clearArea1Start" translation="-0.227878 0 -0.229246" nodeId="9">
+            <TransformGroup name="clearArea1Width" nodeId="10"/>
+            <TransformGroup name="clearArea1Height" nodeId="11"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="12">
+          <TransformGroup name="levelArea1Start" translation="-0.228128 0 -0.227688" nodeId="13">
+            <TransformGroup name="levelArea1Width" translation="3.55271e-17 0 0" nodeId="14"/>
+            <TransformGroup name="levelArea1Height" translation="0 0 -3.55271e-17" nodeId="15"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="16">
+          <TransformGroup name="testArea1Start" translation="-10.7997 1.18473 -0.501434" rotation="0 -30.3373 0" nodeId="17">
+            <TransformGroup name="testArea1End" translation="2.59936 -0.0549965 1.00311" nodeId="18"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="19">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-11.0327 1.19218 -0.623299" rotation="0 -31.3407 0" nodeId="20">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="2.91436 0 0.483754" nodeId="21"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipCollision" nodeId="22"/>
+        <TransformGroup name="visuals" nodeId="23">
+          <Shape shapeId="1" name="szurkemarha" translation="-9.79517 0.974365 0.724159" rotation="180 -58.1185 180" scale="0.192067 0.25 0.25" static="true" clipDistance="200" nodeId="24" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="collisions" nodeId="25"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

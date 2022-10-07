@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="../../textures/fs19/portTrims_diffuse.png"/>
+    <File fileId="2" filename="../../textures/fs19/portTrims_normal.png"/>
+    <File fileId="3" filename="../../textures/fs19/portTrims_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="portTrims_mat" materialId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="drainMH.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="drainMH" nodeId="7">
+        <TransformGroup name="clearAreas" nodeId="8">
+          <TransformGroup name="clearArea1Start" nodeId="9">
+            <TransformGroup name="clearArea1Width" nodeId="10"/>
+            <TransformGroup name="clearArea1Height" nodeId="11"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="12">
+          <TransformGroup name="levelArea1Start" nodeId="13">
+            <TransformGroup name="levelArea1Width" nodeId="14"/>
+            <TransformGroup name="levelArea1Height" nodeId="15"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" nodeId="16">
+          <TransformGroup name="indoorArea1Start" nodeId="17">
+            <TransformGroup name="indoorArea1Width" nodeId="18"/>
+            <TransformGroup name="indoorArea1Height" nodeId="19"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="20">
+          <TransformGroup name="testArea1Start" nodeId="21">
+            <TransformGroup name="testArea1End" nodeId="22"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="23">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" nodeId="24">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="0 4.76837e-07 0" nodeId="25"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipCollisions" nodeId="26"/>
+        <TransformGroup name="visuals" nodeId="27">
+          <Shape shapeId="1" name="roadTrimB_03" translation="-21.0568 -0.0135536 0.457214" rotation="4.07111e-13 90 0" scale="1 1 1.15014" static="true" clipDistance="91" nodeId="28" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roadTrimB_03" translation="-21.3068 -0.0135536 -12.1038" scale="1 1 1.081" static="true" clipDistance="91" nodeId="29" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roadTrimB_03" translation="-21.0568 -0.0135536 -11.8478" rotation="4.07111e-13 90 0" scale="1 1 1.081" static="true" clipDistance="91" nodeId="30" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roadTrimB_03" translation="-12.4078 -0.0135536 -11.8478" rotation="4.07111e-13 90 0" static="true" clipDistance="91" nodeId="31" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roadTrimB_03" translation="-4.40982 0.0145454 -11.8478" rotation="4.07111e-13 90 0" scale="1 1 1.081" static="true" clipDistance="91" nodeId="32" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roadTrimB_03" translation="4.23715 0.0145454 -11.8478" rotation="4.07111e-13 90 0" scale="1 1 0.899294" static="true" clipDistance="91" nodeId="33" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roadTrimB_03" translation="-11.6048 -0.0135536 -11.5887" rotation="-3.78285e-13 -0 -9.62557e-15" scale="1 1 1.08062" static="true" clipDistance="91" nodeId="34" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roadTrimB_03" translation="-11.6048 -0.0135536 -2.94275" rotation="-3.78285e-13 -0 -9.62557e-15" scale="1 1 1.08062" static="true" clipDistance="91" nodeId="35" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roadTrimB_03" translation="-11.6048 -0.0135536 5.69623" rotation="-3.78285e-13 -0 -9.62557e-15" scale="1 1 0.881062" static="true" clipDistance="91" nodeId="36" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roadTrimB_03" translation="-21.3058 -0.0135536 -3.45978" scale="1 1 1.081" static="true" clipDistance="91" nodeId="37" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roadTrimB_03" translation="-21.3048 -0.0135536 5.18323" scale="1 1 0.894" static="true" clipDistance="91" nodeId="38" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roadTrimB_03" translation="-11.8448 -0.0135536 12.5883" rotation="6.79392e-10 -90 0" scale="1 1 1.148" static="true" clipDistance="91" nodeId="39" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roadTrimB_03" translation="-21.0268 -0.0135536 12.5883" rotation="6.79392e-10 -90 0" scale="1 1 0.93686" static="true" clipDistance="91" nodeId="40" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roadTrimB_03" translation="11.4312 0.0145454 -11.8478" rotation="4.07111e-13 90 0" scale="1 1 0.889167" static="true" clipDistance="91" nodeId="41" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roadTrimB_03" translation="18.7952 0.0145454 -11.5988" rotation="180 -0 180" scale="1 1 1.01815" static="true" clipDistance="91" nodeId="42" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roadTrimB_03" translation="18.7952 0.0145454 -19.7448" rotation="180 -0 180" scale="1 1 0.984311" static="true" clipDistance="91" nodeId="43" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roadTrimB_03" translation="20.3462 0.0103455 3.61224" rotation="-180 -0 -180" scale="1 1 0.889167" static="true" clipDistance="91" nodeId="44" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roadTrimB_03" translation="20.3462 0.0103455 -3.50079" rotation="-180 -0 -180" scale="1 1 0.946375" static="true" clipDistance="91" nodeId="45" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roadTrimB_03" translation="20.3462 0.0103455 10.7192" rotation="-180 -0 -180" scale="1 1 0.889167" static="true" clipDistance="91" nodeId="46" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="collision" nodeId="47"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

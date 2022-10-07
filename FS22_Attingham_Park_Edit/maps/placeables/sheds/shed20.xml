@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="simplePlaceable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_shed</name>
+        <functions>
+            <function>$l10n_function_garage</function>
+        </functions>
+        <image>maps/placeables/storeImage/shed20.dds</image>
+        <price>25000</price>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <dailyUpkeep>5</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>sheds</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>sheds</tab>
+        </brush>
+        <vertexBufferMemoryUsage>76800</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>12032</indexBufferMemoryUsage>
+        <textureMemoryUsage>3801088</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <boughtWithFarmland>true</boughtWithFarmland>		
+        <filename>maps/placeables/sheds/shed20.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="medImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+	
+    <animatedObjects>
+	<animatedObject saveId="sheepDoor1">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="trigger1" posText="openDoor" negText="closeDoor" />
+          <sounds>
+                <moving file="maps/sounds/slidingGate.ogg" loops="0" volume="0.8" radius="25" innerRadius="3" fadeOu="0.25"/>
+            </sounds>		
+        <animation initialTime="0" duration="3.5">
+            <part node="door1">
+                <keyFrame time="0.00" translation="0 0 0" />
+                <keyFrame time="0.95" translation="0 0 -5.5" />
+            </part>
+        </animation>
+    </animatedObject>
+</animatedObjects>
+
+    <i3dMappings>
+        <i3dMapping id="clearArea1Start" node="0>0|0" />
+        <i3dMapping id="clearArea1Width" node="0>0|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>0|0|1" />
+        <i3dMapping id="levelArea1Start" node="0>1|0" />
+        <i3dMapping id="levelArea1Width" node="0>1|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>1|0|1" />
+        <i3dMapping id="indoorArea1Start" node="0>2|0" />
+        <i3dMapping id="indoorArea1Width" node="0>2|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>2|0|1" />
+        <i3dMapping id="testArea1Start" node="0>3|0" />
+        <i3dMapping id="testArea1End" node="0>3|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>4|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>4|0|0" />
+        <i3dMapping id="trigger1" node="0>6|1|0|0" />
+        <i3dMapping id="door1" node="0>6|1|0|1" />
+    </i3dMappings>
+</placeable>

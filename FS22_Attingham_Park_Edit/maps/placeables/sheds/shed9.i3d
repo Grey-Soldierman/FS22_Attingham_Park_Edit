@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="8" filename="../../textures/csp1.dds"/>
+    <File fileId="9" filename="../../textures/csp1_normal.dds"/>
+    <File fileId="10" filename="../../textures/csp1_specular.dds"/>
+    <File fileId="3" filename="../../textures/girder_normal.dds"/>
+    <File fileId="2" filename="../../textures/girder_red_diffuse.dds"/>
+    <File fileId="4" filename="../../textures/girder_specular.dds"/>
+    <File fileId="5" filename="../../textures/oldtin2_diffuse.dds"/>
+    <File fileId="6" filename="../../textures/oldtin2_normal.dds"/>
+    <File fileId="7" filename="../../textures/oldtin2_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="csp1" materialId="4">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="fs17shed" materialId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="side2" materialId="6">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="7" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="shed9.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="shed9" lockedgroup="true" clipDistance="600" nodeId="12">
+        <TransformGroup name="clearAreas" nodeId="13">
+          <TransformGroup name="clearArea1Start" translation="-9.654 -4.76837e-07 6.3443" rotation="-0 90 0" nodeId="14">
+            <TransformGroup name="clearArea1Width" translation="12.685 0 0" nodeId="15"/>
+            <TransformGroup name="clearArea1Height" translation="0 0 19.3137" nodeId="16"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="17">
+          <TransformGroup name="levelArea1Start" translation="-9.654 -4.8e-07 6.3443" rotation="0 90 0" nodeId="18">
+            <TransformGroup name="levelArea1Width" translation="12.685 0 0" nodeId="19"/>
+            <TransformGroup name="levelArea1Height" translation="0 0 19.3137" nodeId="20"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" nodeId="21">
+          <TransformGroup name="indoorArea1Start" translation="-9.654 -4.8e-07 6.3443" rotation="0 90 0" nodeId="22">
+            <TransformGroup name="indoorArea1Width" translation="12.685 0 0" nodeId="23"/>
+            <TransformGroup name="indoorArea1Height" translation="0 0 19.3137" nodeId="24"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="25">
+          <TransformGroup name="testArea1Start" translation="-9.65957 0 6.34162" rotation="-0 90 0" nodeId="26">
+            <TransformGroup name="testArea1End" translation="12.493 7.19079 18.815" nodeId="27"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="28">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-9.65523 0 6.35018" rotation="-0 90 0" nodeId="29">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="12.6912 5.96046e-08 19.3075" nodeId="30"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipCollisions" nodeId="31">
+          <Shape shapeId="1" name="tipCollision" translation="-9.5 2.23246 4.27951e-06" rotation="0 90 0" scale="11.7556 5.19162 1.5" static="true" collisionMask="524288" nodeId="32" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="1" name="tipCollision" translation="0.0186972 2.23246 -6" scale="18.296 5.19162 1.5" static="true" collisionMask="524288" nodeId="33" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="1" name="tipCollision" translation="9.5 2.23246 4.21435e-06" rotation="0 90 0" scale="11.7556 5.19162 1.5" static="true" collisionMask="524288" nodeId="34" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="visuals" nodeId="35">
+          <TransformGroup name="winter" nodeId="36"/>
+          <Shape shapeId="2" name="shed9" translation="-5.12163e-16 -3.35377e-08 -1.57032" rotation="-1.22368e-06 0 -8.74978e-07" scale="1 1 1.5" static="true" clipDistance="500" nodeId="37" materialIds="5,6" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="wallBreezeBlock" translation="-9.05 -1 -2.9" scale="1 1 0.668" static="true" nodeId="38" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="3" name="wallBreezeBlock" translation="0 0 5.84" static="true" nodeId="39" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="3" name="wallBreezeBlock" translation="9.05 -1 -2.9" scale="1 1 0.68" static="true" nodeId="40" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="3" name="wallBreezeBlock" translation="0 0 5.84" static="true" nodeId="41" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="3" name="wallBreezeBlock" translation="8.938 -1 -2.786" rotation="0 -90 0" scale="1 1 0.765" static="true" nodeId="42" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="3" name="wallBreezeBlock" translation="0 0 5.84" static="true" nodeId="43" materialIds="4" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="3" name="wallBreezeBlock" translation="0 0 5.84" static="true" nodeId="44" materialIds="4" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="3" name="wallBreezeBlock" translation="0 0 5.84" static="true" nodeId="45" materialIds="4" castsShadows="true" receiveShadows="true"/>
+                </Shape>
+              </Shape>
+            </Shape>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="collision" nodeId="46"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

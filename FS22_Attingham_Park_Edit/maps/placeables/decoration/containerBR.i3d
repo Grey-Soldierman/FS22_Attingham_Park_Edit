@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="../../textures/fs19/cargoContainerBlue_diffuse.png"/>
+    <File fileId="2" filename="../../textures/fs19/cargoContainerSet_normal.png"/>
+    <File fileId="3" filename="../../textures/fs19/cargoContainerSet_specular.png"/>
+    <File fileId="4" filename="../../textures/fs19/tireHuge_diffuse.png"/>
+    <File fileId="5" filename="../../textures/fs19/tireHuge_normal.png"/>
+    <File fileId="6" filename="../../textures/fs19/tireHuge_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="cargoContainerBlue_mat" materialId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="grass_mat" materialId="5" diffuseColor="0.486275 0.494118 0.494118 1">
+    </Material>
+    <Material name="tireHuge_mat" materialId="6">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="containerBR.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="containerBR" nodeId="20">
+        <TransformGroup name="clearAreas" nodeId="21">
+          <TransformGroup name="clearArea1Start" nodeId="22">
+            <TransformGroup name="clearArea1Width" nodeId="23"/>
+            <TransformGroup name="clearArea1Height" nodeId="24"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="25">
+          <TransformGroup name="levelArea1Start" nodeId="26">
+            <TransformGroup name="levelArea1Width" nodeId="27"/>
+            <TransformGroup name="levelArea1Height" nodeId="28"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" nodeId="29">
+          <TransformGroup name="indoorArea1Start" nodeId="30">
+            <TransformGroup name="indoorArea1Width" nodeId="31"/>
+            <TransformGroup name="indoorArea1Height" nodeId="32"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="33">
+          <TransformGroup name="testArea1Start" nodeId="34">
+            <TransformGroup name="testArea1End" nodeId="35"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="36">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="10.0366 -4.76837e-07 4.08469" nodeId="37">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="47.1257 4.76837e-07 14.9952" nodeId="38"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipCollisions" nodeId="39"/>
+        <TransformGroup name="visuals" nodeId="40">
+          <Shape shapeId="1" name="containerBR" translation="147.888 55.5078 592.783" rotation="0 -2.58487 0" static="true" clipDistance="150" nodeId="41" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="door1" translation="148.854 56.9499 596.677" rotation="0 -2.58487 0" clipDistance="50" nodeId="42" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="door2" translation="146.575 56.9499 596.575" rotation="0 -2.58487 0" clipDistance="50" nodeId="43" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="door3" translation="146.914 56.9499 589.085" rotation="0 -2.58487 0" clipDistance="50" nodeId="44" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="door4" translation="149.192 56.9499 589.188" rotation="0 -2.58487 0" clipDistance="50" nodeId="45" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="tireHugeUsed01" translation="146.221 55.6575 590.615" rotation="18.094 0.238942 9.06628" scale="0.5 0.5 0.5" clipDistance="40" nodeId="46" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="tireHugeUsed01" translation="146.004 55.4121 589.724" rotation="-7.18733 0.238942 9.06628" scale="0.5 0.5 0.5" clipDistance="40" nodeId="47" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="collision" nodeId="55">
+          <Shape shapeId="7" name="col" translation="148.854 56.9499 596.677" rotation="0 -2.58487 0" visibility="false" static="true" density="0.0001" nodeId="48" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="8" name="col" translation="146.197 55.81 590.665" rotation="18.094 0.238942 9.06628" scale="0.5 0.5 0.5" visibility="false" static="true" density="0.0001" nodeId="49" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="8" name="col" translation="145.979 55.5712 589.704" rotation="-7.18733 0.238942 9.06628" scale="0.5 0.5 0.5" visibility="false" static="true" density="0.0001" nodeId="50" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="9" name="col" translation="155.88 55.5078 593.144" rotation="0 -2.58487 0" visibility="false" static="true" density="0.0001" nodeId="51" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="10" name="col" translation="147.174 56.1862 596.956" rotation="0 -2.58487 0" visibility="false" static="true" density="0.0001" nodeId="52" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="11" name="col" translation="147.505 56.1862 589.618" rotation="0 -2.58487 0" visibility="false" static="true" density="0.0001" nodeId="53" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="12" name="col" translation="148.649 56.1862 589.67" rotation="0 -2.58487 0" visibility="false" static="true" density="0.0001" nodeId="54" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

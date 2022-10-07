@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="9" filename="../../textures/Galvanized1.dds"/>
+    <File fileId="7" filename="../../textures/concrete.dds"/>
+    <File fileId="8" filename="../../textures/concrete_spec.dds"/>
+    <File fileId="3" filename="../../textures/fence01_diffuse.png"/>
+    <File fileId="6" filename="../../textures/fs19/default_specular.png"/>
+    <File fileId="11" filename="../../textures/fs19/wire_specular.dds"/>
+    <File fileId="10" filename="../../textures/metal_diffuse_normal.dds"/>
+    <File fileId="1" filename="../../textures/texture1.dds"/>
+    <File fileId="2" filename="../../textures/texture1_normal.dds"/>
+    <File fileId="4" filename="../../textures/wooddoor.dds"/>
+    <File fileId="5" filename="../../textures/woodenFences_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="10mStoneWall" materialId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="default5" materialId="5">
+      <Texture fileId="3"/>
+    </Material>
+    <Material name="Material" materialId="6">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="7">
+      <Texture fileId="7"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="woodenFences_mat" materialId="8">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="wallCF.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="wallCF" nodeId="17">
+        <TransformGroup name="clearAreas" nodeId="18">
+          <TransformGroup name="clearArea1Start" nodeId="19">
+            <TransformGroup name="clearArea1Width" nodeId="20"/>
+            <TransformGroup name="clearArea1Height" nodeId="21"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="22">
+          <TransformGroup name="levelArea1Start" nodeId="23">
+            <TransformGroup name="levelArea1Width" nodeId="24"/>
+            <TransformGroup name="levelArea1Height" nodeId="25"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" nodeId="26">
+          <TransformGroup name="indoorArea1Start" nodeId="27">
+            <TransformGroup name="indoorArea1Width" nodeId="28"/>
+            <TransformGroup name="indoorArea1Height" nodeId="29"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="30">
+          <TransformGroup name="testArea1Start" nodeId="31">
+            <TransformGroup name="testArea1End" nodeId="32"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="33">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="10.0366 -4.76837e-07 4.08469" nodeId="34">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="47.1257 4.76837e-07 14.9952" nodeId="35"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipCollisions" nodeId="36"/>
+        <TransformGroup name="visuals" nodeId="37">
+          <Shape shapeId="1" name="wallCF" translation="826.396 50.0078 276.643" rotation="0 -44.327 0" scale="1 1 1.3" static="true" clipDistance="250" nodeId="38" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="10mStoneWall" translation="833.571 50.0078 283.651" rotation="0 -44.327 0" scale="1 1 1.3" static="true" clipDistance="250" nodeId="39" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="10mStoneWall" translation="840.724 50.0078 290.638" rotation="0 -44.327 0" scale="1 1 1.3" static="true" clipDistance="250" nodeId="40" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="10mStoneWall" translation="847.906 50.0078 297.653" rotation="0 -44.327 0" scale="1 1 1.3" static="true" clipDistance="250" nodeId="41" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="10mStoneWall" translation="853.141 50.0078 302.766" rotation="0 -44.327 0" scale="0.735709 1 1.3" static="true" clipDistance="250" nodeId="42" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="10mStoneWallBrokenAll1" translation="812.057 50.0078 262.637" rotation="0 -44.327 0" scale="1 1 1.3" static="true" clipDistance="250" nodeId="44" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="10mStoneWall" translation="819.169 50.0078 269.583" rotation="0 -44.327 0" scale="1 1 1.3" static="true" clipDistance="250" nodeId="43" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="woodengate" translation="813.036 49.9964 264.382" rotation="-163.318 -44.147 166.67" scale="1 1.00988 1.00003" static="true" clipDistance="200" nodeId="45" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="cowFencePost" translation="803.081 49.8993 253.839" rotation="4.04157 -89.1901 -135.553" scale="1 1.00005 1.06873" static="true" clipDistance="200" nodeId="46" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="CattleGrid" translation="805.549 49.6 256.334" rotation="-1.03298 45.0001 -0.165051" scale="0.948357 1 1.74" static="true" clipDistance="100" nodeId="47" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="pole" translation="805.549 49.6 256.334" rotation="-1.03298 45.0001 -0.165051" scale="0.948357 1 1.74" static="true" clipDistance="100" nodeId="48" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="cover" translation="805.545 50.1696 256.326" rotation="1.03297 -45.0001 179.835" scale="0.948357 1 1.74" static="true" nodeId="49" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="4" name="cowFencePost" translation="808.021 50.0774 258.847" rotation="139.113 -43.7591 -154.499" scale="1 1.02832 1.0027" static="true" clipDistance="200" nodeId="50" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="collision" nodeId="51"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

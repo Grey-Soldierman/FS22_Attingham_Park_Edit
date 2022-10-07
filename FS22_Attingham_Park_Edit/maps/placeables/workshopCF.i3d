@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="../textures/board_diff.png"/>
+    <File fileId="13" filename="../textures/chair_diff.png"/>
+    <File fileId="14" filename="../textures/cupboard_diff.png"/>
+    <File fileId="5" filename="../textures/locker_diff.png"/>
+    <File fileId="12" filename="../textures/trolley_diff.png"/>
+    <File fileId="11" filename="../textures/vice_diff.png"/>
+    <File fileId="9" filename="../textures/workbench_1_diff.png"/>
+    <File fileId="10" filename="../textures/workbench_2_diff.png"/>
+    <File fileId="8" filename="../textures/workbench_3_diff.png"/>
+    <File fileId="7" filename="../textures/workbench_4_diff.png"/>
+    <File fileId="1" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
+    <File fileId="2" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
+    <File fileId="3" filename="$data/maps/textures/shared/warningStripes_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="board_mat" materialId="4">
+      <Texture fileId="6"/>
+    </Material>
+    <Material name="chair_mat" materialId="5">
+      <Texture fileId="13"/>
+    </Material>
+    <Material name="cupboard_mat" materialId="6">
+      <Texture fileId="14"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="locker_mat" materialId="8">
+      <Texture fileId="5"/>
+    </Material>
+    <Material name="trolley_mat" materialId="9">
+      <Texture fileId="12"/>
+    </Material>
+    <Material name="vice_mat" materialId="10">
+      <Texture fileId="11"/>
+    </Material>
+    <Material name="warningStripes_mat" materialId="11">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="workbench_1_mat" materialId="12">
+      <Texture fileId="9"/>
+    </Material>
+    <Material name="workbench_2_mat" materialId="13">
+      <Texture fileId="10"/>
+    </Material>
+    <Material name="workbench_3_mat" materialId="14">
+      <Texture fileId="8"/>
+    </Material>
+    <Material name="workbench_4_mat" materialId="15">
+      <Texture fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="workshopCF.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="workshopCF" nodeId="29">
+        <TransformGroup name="workshop" nodeId="30">
+          <TransformGroup name="markerWrench" translation="-0.362 0.0234985 -1.66989" nodeId="31"/>
+          <Shape shapeId="1" name="warningStripes" translation="2.13554 0 3.46444" clipDistance="100" nodeId="32" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="2" name="vehicleTrigger" translation="0 0 -2.48137" scale="1 1 1.79927" static="true" trigger="true" collisionMask="2097152" clipDistance="300" nodeId="33" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="3" name="playerTrigger" translation="-0.362 0.0234985 -1.66989" static="true" trigger="true" collisionMask="3145728" clipDistance="300" nodeId="34" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="clearAreas" nodeId="35">
+          <TransformGroup name="clearArea1Start" translation="7.39339 0 -5.03014" nodeId="36">
+            <TransformGroup name="clearArea1Width" translation="0 0 14.8672" nodeId="37"/>
+            <TransformGroup name="clearArea1Height" translation="-14.8561 0 0" nodeId="38"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="39">
+          <TransformGroup name="levelArea1Start" translation="-8.25 0 -5.95766" nodeId="40">
+            <TransformGroup name="levelArea1Width" translation="0 0 16.092" nodeId="41"/>
+            <TransformGroup name="levelArea1Height" translation="16.5 0 0" nodeId="42"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" nodeId="43">
+          <TransformGroup name="indoorArea1Start" translation="-0.362 0.0234985 -1.66989" nodeId="44">
+            <TransformGroup name="indoorArea1Width" translation="-0.362 0.0234985 -1.66989" nodeId="45"/>
+            <TransformGroup name="indoorArea1Height" translation="-0.362 0.0234985 -1.66989" nodeId="46"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="47">
+          <TransformGroup name="testArea1Start" translation="8.03774 -0 -5.42375" nodeId="48">
+            <TransformGroup name="testArea1End" translation="-16.169 6.11923 15.6511" nodeId="49"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="50">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-7.83806 0 -5.44015" nodeId="51">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="15.449 0 17.7954" nodeId="52"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape shapeId="4" name="locker" translation="-2.27899 0.0095787 0.0784302" rotation="-8.55082e-06 -90 0" static="true" clipDistance="100" nodeId="53" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="5" name="board" translation="-2.89001 0 -1.86853" rotation="9.57055e-21 -90 0" static="true" clipDistance="100" nodeId="54" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="workbench_4" translation="-1.01001 0 0" rotation="0 -0 1.91411e-20" static="true" clipDistance="100" nodeId="55" materialIds="15" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="workbench_3" translation="-2.03003 0 0" rotation="0 -0 1.91411e-20" static="true" clipDistance="100" nodeId="56" materialIds="14" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="cornerPart" translation="-2.89001 0 -0.0249634" rotation="9.57055e-21 -90 0" static="true" clipDistance="100" nodeId="57" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="8" name="workbench_2" translation="-2.89001 0 -0.859985" rotation="9.57055e-21 -90 0" static="true" clipDistance="100" nodeId="58" materialIds="13" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="9" name="vice" static="true" nodeId="59" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="6" name="workbench_1" translation="-2.89001 0 -1.88" rotation="9.57055e-21 -90 0" static="true" clipDistance="100" nodeId="60" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="10" name="trolley" translation="-2.73282 7.9037e-10 -3.1481" rotation="180 -68.8973 -180" static="true" clipDistance="100" nodeId="61" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="board" translation="-2.89001 0 -0.859985" rotation="9.57055e-21 -90 0" static="true" clipDistance="100" nodeId="62" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="chair" translation="-1.49002 0 -0.859985" rotation="9.57055e-21 -90 0" static="true" clipDistance="100" nodeId="63" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="cupboard" translation="-1 0 0" rotation="0 -0 1.91411e-20" static="true" clipDistance="100" nodeId="64" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

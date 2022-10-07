@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="../../textures/MetalCorroded.dds"/>
+    <File fileId="6" filename="../../textures/MetalCorroded_normal.dds"/>
+    <File fileId="2" filename="../../textures/Wood_PlywoodClean.dds"/>
+    <File fileId="3" filename="../../textures/Wood_PlywoodClean_normal.dds"/>
+    <File fileId="11" filename="../../textures/concrete.dds"/>
+    <File fileId="12" filename="../../textures/concrete_normal.dds"/>
+    <File fileId="35" filename="../../textures/concrete_spec.dds"/>
+    <File fileId="7" filename="../../textures/fs19/defaultMetal_specular.dds"/>
+    <File fileId="4" filename="../../textures/fs19/default_specular.png"/>
+    <File fileId="8" filename="../../textures/greencorrugated.dds"/>
+    <File fileId="20" filename="../../textures/grey.dds"/>
+    <File fileId="21" filename="../../textures/grey_normal.dds"/>
+    <File fileId="22" filename="../../textures/grey_spec.dds"/>
+    <File fileId="18" filename="../../textures/lock.dds"/>
+    <File fileId="19" filename="../../textures/lock_normal.dds"/>
+    <File fileId="10" filename="../../textures/red_gloss.dds"/>
+    <File fileId="16" filename="../../textures/shed1rust_diffuse.dds"/>
+    <File fileId="17" filename="../../textures/shed1rust_norm.png"/>
+    <File fileId="13" filename="../../textures/silver.dds"/>
+    <File fileId="9" filename="../../textures/silver_normal.dds"/>
+    <File fileId="32" filename="$data/maps/mapUS/textures/props/ceilingLamp02_diffuse.png"/>
+    <File fileId="33" filename="$data/maps/mapUS/textures/props/ceilingLamp02_normal.png"/>
+    <File fileId="34" filename="$data/maps/mapUS/textures/props/ceilingLamp02_specular.png"/>
+    <File fileId="24" filename="$data/maps/mapUS/textures/props/industrialWallLight_diffuse.png"/>
+    <File fileId="25" filename="$data/maps/mapUS/textures/props/industrialWallLight_normal.png"/>
+    <File fileId="26" filename="$data/maps/mapUS/textures/props/industrialWallLight_specular.png"/>
+    <File fileId="31" filename="$data/maps/mapUS/textures/props/lightWarm_emissive.png"/>
+    <File fileId="30" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="28" filename="$data/shared/default_normal.png"/>
+    <File fileId="27" filename="$data/shared/window02_diffuse.png"/>
+    <File fileId="29" filename="$data/shared/window02_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="base" materialId="4">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="beams" materialId="5">
+      <Texture fileId="20"/>
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
+    </Material>
+    <Material name="ceilingLamp02_mat" materialId="6">
+      <Texture fileId="32"/>
+      <Normalmap fileId="33"/>
+      <Glossmap fileId="34"/>
+    </Material>
+    <Material name="ceilingLamp02Lit_mat" materialId="7" customShaderId="30" customShaderVariation="customEmissiveMap">
+      <Normalmap fileId="33"/>
+      <Glossmap fileId="34"/>
+      <Emissivemap fileId="32"/>
+      <Custommap name="mEmissiveMap" fileId="31"/>
+      <CustomParameter name="lightControl" value="5 0 0 0"/>
+    </Material>
+    <Material name="collision" materialId="8" diffuseColor="0.8 0.8 0.8 1" specularColor="1 1 1">
+    </Material>
+    <Material name="corrugated" materialId="9">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="dorrlocked" materialId="10">
+      <Texture fileId="18"/>
+      <Normalmap fileId="19"/>
+    </Material>
+    <Material name="frame" materialId="11">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="gauge" materialId="12">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="guttering" materialId="13" diffuseColor="0.192157 0.192157 0.192157 1">
+    </Material>
+    <Material name="industrialWallLight_mat" materialId="14">
+      <Texture fileId="24"/>
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="26"/>
+    </Material>
+    <Material name="industrialWallLight_mat" materialId="15" customShaderId="30" customShaderVariation="customEmissiveMap">
+      <Texture fileId="24"/>
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="26"/>
+      <Custommap name="mEmissiveMap" fileId="31"/>
+      <CustomParameter name="lightControl" value="5 0 0 0"/>
+    </Material>
+    <Material name="inside" materialId="16">
+      <Texture fileId="13"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="17" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="Shed1" materialId="18">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17" bumpDepth="0"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="19">
+      <Texture fileId="11"/>
+      <Glossmap fileId="35"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="20" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="window02_mat" materialId="21" alphaBlending="true" customShaderId="30">
+      <Texture fileId="27"/>
+      <Normalmap fileId="28"/>
+      <Glossmap fileId="29"/>
+      <CustomParameter name="lightControl" value="1 0 0 0"/>
+    </Material>
+    <Material name="woodbeams" materialId="22">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="shed15.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="shed15" lockedgroup="true" clipDistance="600" nodeId="46">
+        <TransformGroup name="clearAreas" nodeId="47">
+          <TransformGroup name="clearArea1Start" translation="-13.396 0 10.5725" rotation="-0 90 0" nodeId="48">
+            <TransformGroup name="clearArea1Width" translation="27.47 0 0" nodeId="49"/>
+            <TransformGroup name="clearArea1Height" translation="0 0 26.7686" nodeId="50"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="51">
+          <TransformGroup name="levelArea1Start" translation="-13.396 0 10.5725" rotation="0 90 0" nodeId="52">
+            <TransformGroup name="levelArea1Width" translation="27.47 0 0" nodeId="53"/>
+            <TransformGroup name="levelArea1Height" translation="0 0 26.7686" nodeId="54"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" nodeId="55">
+          <TransformGroup name="indoorArea1Start" translation="-13.396 0 10.5725" rotation="0 90 0" nodeId="56">
+            <TransformGroup name="indoorArea1Width" translation="27.47 0 0" nodeId="57"/>
+            <TransformGroup name="indoorArea1Height" translation="0 0 26.7686" nodeId="58"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="59">
+          <TransformGroup name="testArea1Start" translation="-13.3965 0 10.3773" rotation="-0 90 0" nodeId="60">
+            <TransformGroup name="testArea1End" translation="27.1678 9.83509 26.5686" nodeId="61"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="62">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-13.3936 2.38419e-07 10.3801" rotation="-0 90 0" nodeId="63">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="27.1887 -2.38419e-07 26.7805" nodeId="64"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipCollisions" nodeId="65">
+          <Shape shapeId="1" name="tipCollision" translation="-13.5 2.23246 0.0703198" rotation="0 90 0" scale="20.0693 5.19162 1.5" static="true" collisionMask="524288" nodeId="66" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="1" name="tipCollision" translation="0.019 2.23246 10.5" scale="26.3271 5.19162 1.5" static="true" collisionMask="524288" nodeId="67" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="1" name="tipCollision" translation="0.019 2.23246 -10" scale="26.3271 5.19162 1.5" static="true" collisionMask="524288" nodeId="68" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="1" name="tipCollision" translation="13.5 2.23246 3.5847" rotation="0 90 0" scale="13.4244 5.19162 1.5" static="true" collisionMask="524288" nodeId="69" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="1" name="tipCollision" translation="12.789 2.23246 -9" rotation="0 90 0" scale="1.63911 5.19162 1.5" static="true" collisionMask="524288" nodeId="70" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="visuals" nodeId="71">
+          <TransformGroup name="winter" nodeId="72"/>
+          <Shape shapeId="2" name="shed15" translation="0.206419 6.25807 0" clipDistance="500" nodeId="73" materialIds="22,22,11,9,4,16,13" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="collision" rotation="90 -0 0" static="true" clipDistance="500" nodeId="74" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="LeanTo" translation="-6.03499 -6.3006 -9.81298" rotation="-4.97758e-06 90 0" scale="0.391934 0.427823 0.225485" static="true" clipDistance="500" nodeId="75">
+              <Shape shapeId="4" name="Structure" static="true" clipDistance="150" nodeId="76" materialIds="18" castsShadows="true" receiveShadows="true">
+                <TransformGroup name="Gutter" static="true" clipDistance="150" nodeId="77">
+                  <Shape shapeId="5" name="front_downspout" static="true" clipDistance="150" nodeId="78" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="6" name="front_gutter" static="true" clipDistance="150" nodeId="79" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <TransformGroup name="_flashing" static="true" clipDistance="150" nodeId="80">
+                  <Shape shapeId="7" name="flashing_left" static="true" clipDistance="150" nodeId="81" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="8" name="flashing_right" static="true" clipDistance="150" nodeId="82" materialIds="18" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <Shape shapeId="9" name="back_support" static="true" clipDistance="150" nodeId="83" materialIds="18" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </TransformGroup>
+            <Shape shapeId="10" name="diesaltank" translation="6.317 -6.2658 -13.542" rotation="2.23117e-05 -90 0" scale="1.01526 1.01 1.0934" clipDistance="150" nodeId="84" materialIds="12,10,5" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="1" name="collision" translation="1.93309 1.53026 0.887897" scale="3.24422 3.24162 9.09678" static="true" nodeId="85" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="11" name="industrialWallLight" lockedgroup="true" translation="12.811 -0.831894 -5.67895" rotation="180 -90 0" scale="0.9 1 1" static="true" density="0.0001" nodeId="86" materialIds="17" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="12" name="industrialWallLight_vis" clipDistance="200" nodeId="87" materialIds="14" receiveShadows="true"/>
+              <Shape shapeId="13" name="glass" translation="0 0 0.0144467" clipDistance="40" nodeId="88" materialIds="21" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="illum" nodeId="89">
+                <TransformGroup name="selfIllum" nodeId="90" weatherRequiredMask="64" visibleShaderParameter="3">
+                  <Shape shapeId="14" name="industrialWallLightInnerLit" clipDistance="200" nodeId="91" materialIds="15" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" visibleShaderParameter="0.1"/>
+                  <Shape shapeId="15" name="bulbIllum" translation="-0.00176918 -0.0420775 0.0480477" clipDistance="200" nodeId="92" materialIds="15" receiveShadows="true" weatherRequiredMask="64" visibleShaderParameter="5"/>
+                  <Shape shapeId="16" name="glass" clipDistance="100" nodeId="93" materialIds="21" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" visibleShaderParameter="10"/>
+                </TransformGroup>
+                <TransformGroup name="realLights" nodeId="94" weatherRequiredMask="64">
+                  <Light name="spotLight" translation="0 0 0.05" rotation="-180 0 0" clipDistance="200" nodeId="95" type="spot" color="0.7 0.5 0.3" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="8" coneAngle="179" dropOff="0" weatherRequiredMask="64" renderInvisible="true"/>
+                  <Light name="pointLight" translation="0 0 0.0499153" rotation="-180 0 0" clipDistance="200" nodeId="96" type="point" color="0.7 0.5 0.3" emitDiffuse="true" emitSpecular="true" range="3" weatherRequiredMask="64" renderInvisible="true"/>
+                </TransformGroup>
+              </TransformGroup>
+            </Shape>
+            <Shape shapeId="17" name="ceilingLamp02" lockedgroup="true" translation="-2.77399 2.5633 0.0730037" rotation="180 4.37897e-13 -180" clipDistance="300" nodeId="97" materialIds="6" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="18" name="ceilingLampCable" clipDistance="300" nodeId="98" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="Illum" nodeId="99">
+                <TransformGroup name="selfLit" nodeId="100" weatherRequiredMask="64" visibleShaderParameter="3">
+                  <Shape shapeId="19" name="ceilingLampInnerLit" clipDistance="300" nodeId="101" materialIds="7" castsShadows="true" receiveShadows="true" weatherRequiredMask="64"/>
+                  <Shape shapeId="20" name="bulblit" clipDistance="150" nodeId="102" materialIds="7" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" visibleShaderParameter="5"/>
+                </TransformGroup>
+                <TransformGroup name="realLights" nodeId="103" weatherRequiredMask="64">
+                  <Light name="spotLight01" translation="0 -4.15878 -4.95294e-06" rotation="-90 0 0" clipDistance="150" nodeId="104" type="point" color="0.7 0.5 0.3" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="15" weatherRequiredMask="64" renderInvisible="true" visibleShaderParameter="5"/>
+                </TransformGroup>
+              </TransformGroup>
+            </Shape>
+            <Shape shapeId="17" name="ceilingLamp02" lockedgroup="true" translation="-7.935 2.5633 0.0730037" rotation="180 4.37897e-13 -180" clipDistance="300" nodeId="105" materialIds="6" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="18" name="ceilingLampCable" clipDistance="300" nodeId="106" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="Illum" nodeId="107">
+                <TransformGroup name="selfLit" nodeId="108" weatherRequiredMask="64" visibleShaderParameter="3">
+                  <Shape shapeId="19" name="ceilingLampInnerLit" clipDistance="300" nodeId="109" materialIds="7" castsShadows="true" receiveShadows="true" weatherRequiredMask="64"/>
+                  <Shape shapeId="20" name="bulblit" clipDistance="150" nodeId="110" materialIds="7" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" visibleShaderParameter="5"/>
+                </TransformGroup>
+                <TransformGroup name="realLights" nodeId="111" weatherRequiredMask="64">
+                  <Light name="spotLight01" translation="0 -4.15878 -4.95294e-06" rotation="-90 0 0" clipDistance="150" nodeId="112" type="point" color="0.7 0.5 0.3" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="15" weatherRequiredMask="64" renderInvisible="true" visibleShaderParameter="5"/>
+                </TransformGroup>
+              </TransformGroup>
+            </Shape>
+            <Shape shapeId="17" name="ceilingLamp02" lockedgroup="true" translation="2.38301 2.5633 0.0730037" rotation="180 4.37897e-13 -180" clipDistance="300" nodeId="113" materialIds="6" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="18" name="ceilingLampCable" clipDistance="300" nodeId="114" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="Illum" nodeId="115">
+                <TransformGroup name="selfLit" nodeId="116" weatherRequiredMask="64" visibleShaderParameter="3">
+                  <Shape shapeId="19" name="ceilingLampInnerLit" clipDistance="300" nodeId="117" materialIds="7" castsShadows="true" receiveShadows="true" weatherRequiredMask="64"/>
+                  <Shape shapeId="20" name="bulblit" clipDistance="150" nodeId="118" materialIds="7" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" visibleShaderParameter="5"/>
+                </TransformGroup>
+                <TransformGroup name="realLights" nodeId="119" weatherRequiredMask="64">
+                  <Light name="spotLight01" translation="0 -4.15878 -4.95294e-06" rotation="-90 0 0" clipDistance="150" nodeId="120" type="point" color="0.7 0.5 0.3" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="15" weatherRequiredMask="64" renderInvisible="true" visibleShaderParameter="5"/>
+                </TransformGroup>
+              </TransformGroup>
+            </Shape>
+            <Shape shapeId="17" name="ceilingLamp02" lockedgroup="true" translation="7.543 2.5633 0.0730037" rotation="180 4.37897e-13 -180" clipDistance="300" nodeId="121" materialIds="6" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="18" name="ceilingLampCable" clipDistance="300" nodeId="122" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="Illum" nodeId="123">
+                <TransformGroup name="selfLit" nodeId="124" weatherRequiredMask="64" visibleShaderParameter="3">
+                  <Shape shapeId="19" name="ceilingLampInnerLit" clipDistance="300" nodeId="125" materialIds="7" castsShadows="true" receiveShadows="true" weatherRequiredMask="64"/>
+                  <Shape shapeId="20" name="bulblit" clipDistance="150" nodeId="126" materialIds="7" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" visibleShaderParameter="5"/>
+                </TransformGroup>
+                <TransformGroup name="realLights" nodeId="127" weatherRequiredMask="64">
+                  <Light name="spotLight01" translation="0 -4.15878 -4.95294e-06" rotation="-90 0 0" clipDistance="150" nodeId="128" type="point" color="0.7 0.5 0.3" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="15" weatherRequiredMask="64" renderInvisible="true" visibleShaderParameter="5"/>
+                </TransformGroup>
+              </TransformGroup>
+            </Shape>
+          </Shape>
+          <TransformGroup name="DoorLeft" translation="3.83644 -0.01195 -8.21802" rotation="2.73104e-05 -0 0" scale="1 0.8 0.862" clipDistance="250" nodeId="129">
+            <Shape shapeId="21" name="trigger" translation="10.5268 2.37188 3.074" rotation="0 90 0" scale="1 1 2" static="true" trigger="true" collisionMask="11534336" nodeId="130" materialIds="19" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="22" name="door2" scale="0.3 0.4 0.57" kinematic="true" nodeId="131" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="collision" nodeId="132"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

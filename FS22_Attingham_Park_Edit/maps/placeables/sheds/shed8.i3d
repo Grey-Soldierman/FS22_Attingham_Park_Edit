@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="9" filename="../../textures/Barn_diffuse1.dds"/>
+    <File fileId="10" filename="../../textures/NormalMapBarn1.dds"/>
+    <File fileId="3" filename="../../textures/NormalMapgoodwall.dds"/>
+    <File fileId="6" filename="../../textures/NormalMapslates2k.dds"/>
+    <File fileId="8" filename="../../textures/NormalMapstablesmalldoor.dds"/>
+    <File fileId="12" filename="../../textures/SpecularMapdrainpipe.dds"/>
+    <File fileId="4" filename="../../textures/Stone.dds"/>
+    <File fileId="11" filename="../../textures/drainpipe.dds"/>
+    <File fileId="5" filename="../../textures/felt.dds"/>
+    <File fileId="7" filename="../../textures/stabledoor.dds"/>
+    <File fileId="2" filename="../../textures/wallside.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="farmhouse2" materialId="4">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+    </Material>
+    <Material name="girder32" materialId="5">
+      <Texture fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+    <Material name="longbarn2" materialId="6">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+    </Material>
+    <Material name="oakbuilding3" materialId="7">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+    </Material>
+    <Material name="oakbuilding4" materialId="8">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+    </Material>
+    <Material name="stone" materialId="9">
+      <Texture fileId="4"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="10" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="shed8.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="shed8" lockedgroup="true" clipDistance="600" nodeId="14">
+        <TransformGroup name="clearAreas" nodeId="15">
+          <TransformGroup name="clearArea1Start" translation="-3.658 2.38419e-07 7.01565" rotation="-0 90 0" nodeId="16">
+            <TransformGroup name="clearArea1Width" translation="14.026 0 0" nodeId="17"/>
+            <TransformGroup name="clearArea1Height" translation="0 0 7.51839" nodeId="18"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="19">
+          <TransformGroup name="levelArea1Start" translation="-3.658 2.4e-07 7.01565" rotation="0 90 0" nodeId="20">
+            <TransformGroup name="levelArea1Width" translation="14.026 0 0" nodeId="21"/>
+            <TransformGroup name="levelArea1Height" translation="0 0 7.51839" nodeId="22"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" nodeId="23">
+          <TransformGroup name="indoorArea1Start" translation="-3.658 2.4e-07 7.01565" rotation="0 90 0" nodeId="24">
+            <TransformGroup name="indoorArea1Width" translation="14.026 0 0" nodeId="25"/>
+            <TransformGroup name="indoorArea1Height" translation="0 0 7.51839" nodeId="26"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="27">
+          <TransformGroup name="testArea1Start" translation="-3.65343 2.38419e-07 7.01193" rotation="-0 90 0" nodeId="28">
+            <TransformGroup name="testArea1End" translation="13.7864 7.32114 7.49723" nodeId="29"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="30">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-3.65477 0 7.00863" rotation="-0 90 0" nodeId="31">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="14.0223 0 7.50993" nodeId="32"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipCollisions" nodeId="33">
+          <Shape shapeId="1" name="tipCollision" translation="-3.08134 2.23246 3.70991e-06" rotation="0 90 0" scale="13.5107 5.19162 1.5" static="true" collisionMask="524288" nodeId="34" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="1" name="tipCollision" translation="0.115 2.23246 -6.29145" scale="7.12385 5.19162 1.5" static="true" collisionMask="524288" nodeId="35" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="1" name="tipCollision" translation="0.115 2.23246 3.34739" scale="7 5 7" static="true" collisionMask="524288" nodeId="36" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="visuals" nodeId="37">
+          <TransformGroup name="winter" nodeId="38"/>
+          <Shape shapeId="2" name="shed8" translation="1.32108 0.627749 6.57643" scale="1 1.14 1" static="true" clipDistance="450" nodeId="39" materialIds="4,9,6,7,8,5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="collision" nodeId="40"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

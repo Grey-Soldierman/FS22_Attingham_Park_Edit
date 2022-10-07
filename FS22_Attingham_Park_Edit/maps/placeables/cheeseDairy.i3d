@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
+    <File fileId="3" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
+    <File fileId="4" filename="$data/maps/textures/shared/warningStripes_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="cheeseDairy.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="cheeseDairy" nodeId="12">
+        <TransformGroup name="indoorAreas" nodeId="13">
+          <TransformGroup name="indoorArea1Start" translation="-0.254282 0 7.11079" nodeId="14">
+            <TransformGroup name="indoorArea1Width" translation="9.89531 0 -1.13687e-15" nodeId="15"/>
+            <TransformGroup name="indoorArea1Height" translation="0 0 10.6931" nodeId="16"/>
+          </TransformGroup>
+          <TransformGroup name="indoorArea2Start" translation="14.9337 0 7.04043" nodeId="17">
+            <TransformGroup name="indoorArea2Width" translation="9.85986 0 0" nodeId="18"/>
+            <TransformGroup name="indoorArea2Height" translation="0 0 10.9628" nodeId="19"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape shapeId="1" name="infoTrigger" translation="1.17311 0 11.5319" scale="0.500418 1 1" visibility="false" static="true" trigger="true" collisionMask="1048576" nodeId="20" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="sellingStation" translation="-3.46063 0.143962 12.8501" nodeId="21">
+          <Shape shapeId="2" name="unloadTrigger" translation="0 0 -2.6784" static="true" trigger="true" collisionMask="1073741824" nodeId="22" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="unloadTriggerMarker" nodeId="23"/>
+          </Shape>
+          <TransformGroup name="teleportNode" translation="12.838 -0.149193 -9.22974" rotation="-0.000107288 90 -0.000107286" nodeId="24"/>
+          <TransformGroup name="aiNode" translation="0.264786 0 -0.79575" rotation="0 -90 0" nodeId="25"/>
+        </TransformGroup>
+        <TransformGroup name="productionPoint" translation="-2.07316 0 -3.94904" nodeId="26">
+          <Shape shapeId="3" name="playerTrigger" translation="11.4 0 9.6" static="true" trigger="true" collisionMask="3145728" clipDistance="600" nodeId="27" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="playerTriggerMarker" translation="0 1.15085 0" nodeId="28"/>
+          </Shape>
+          <TransformGroup name="soundNode" translation="7.03889 0 12.6642" nodeId="29"/>
+        </TransformGroup>
+        <TransformGroup name="palletSpawner" translation="3.53938 -1.36591e-07 4.80444" rotation="180 0 180" nodeId="30">
+          <TransformGroup name="spawnSpace1Start" translation="-3.89216 0.00440004 -0.00566061" nodeId="31">
+            <TransformGroup name="spawnSpace1end" translation="7.72248 0 2.27374e-15" nodeId="32"/>
+          </TransformGroup>
+          <Shape shapeId="4" name="warningStripes_palletSpawnArea" translation="-0.221644 -0.01 5.68434e-16" clipDistance="300" nodeId="33" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="collisions" nodeId="34">
+          <Shape shapeId="5" name="tipCol" translation="-2.95704 0 14.6863" scale="1 1 1.66235" static="true" collisionMask="524288" density="0.0001" nodeId="35" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" translation="0 2.27374e-15 0" nodeId="36">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-7.14748 -6.82121e-15 3.08787" nodeId="37">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="19.761 -6.82121e-15 15.9163" nodeId="38"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

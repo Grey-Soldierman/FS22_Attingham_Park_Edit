@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="../../textures/NormalMapoldtin.dds"/>
+    <File fileId="3" filename="../../textures/fs19/defaultPlastic_specular.png"/>
+    <File fileId="6" filename="../../textures/fs19/default_specular.png"/>
+    <File fileId="2" filename="../../textures/mtl_rja_01.dds"/>
+    <File fileId="4" filename="../../textures/oldtin1.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="fs17shed" materialId="4">
+      <Texture fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="side2" materialId="5">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="6" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="shed2.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="shed2" lockedgroup="true" clipDistance="600" nodeId="10">
+        <TransformGroup name="clearAreas" nodeId="11">
+          <TransformGroup name="clearArea1Start" translation="-5.174 0 9.32598" rotation="-0 90 0" nodeId="12">
+            <TransformGroup name="clearArea1Width" translation="18.65 0 0" nodeId="13"/>
+            <TransformGroup name="clearArea1Height" translation="0 0 10.33" nodeId="14"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="15">
+          <TransformGroup name="levelArea1Start" translation="-5.174 0 9.32598" rotation="0 90 0" nodeId="16">
+            <TransformGroup name="levelArea1Width" translation="18.65 0 0" nodeId="17"/>
+            <TransformGroup name="levelArea1Height" translation="0 0 10.33" nodeId="18"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" nodeId="19">
+          <TransformGroup name="indoorArea1Start" translation="-5.174 0 9.32598" rotation="0 90 0" nodeId="20">
+            <TransformGroup name="indoorArea1Width" translation="18.65 0 0" nodeId="21"/>
+            <TransformGroup name="indoorArea1Height" translation="0 0 10.33" nodeId="22"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="23">
+          <TransformGroup name="testArea1Start" translation="-5.17465 0 9.31108" rotation="-0 90 0" nodeId="24">
+            <TransformGroup name="testArea1End" translation="18.619 7.1525 10.4825" nodeId="25"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="26">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-5.16327 0 9.3194" rotation="-0 90 0" nodeId="27">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="18.5958 0 10.3003" nodeId="28"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipCollisions" nodeId="29">
+          <Shape shapeId="1" name="tipCollision" translation="-5 2.23246 -1.34242e-07" rotation="0 90 0" scale="18.2351 5.19162 1.5" static="true" collisionMask="524288" nodeId="30" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="1" name="tipCollision" translation="0.290717 2.23246 -9.5" scale="9.71986 5.19162 1.5" static="true" collisionMask="524288" nodeId="31" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="1" name="tipCollision" translation="0.290717 2.23246 9.5" scale="9.71986 5.19162 1.5" static="true" collisionMask="524288" nodeId="32" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="visuals" nodeId="33">
+          <TransformGroup name="winter" nodeId="34"/>
+          <Shape shapeId="2" name="fs17shed" translation="-1.08414 4.4 1.02852e-07" rotation="-0 90 0" scale="1 1 1.5" static="true" clipDistance="200" nodeId="35" materialIds="4,5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="collision" nodeId="36"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>
