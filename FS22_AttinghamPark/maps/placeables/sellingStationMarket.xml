@@ -47,7 +47,7 @@
     </hotspots>
 
     <sellingStation node="sellingStationProducts" supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
-        <unloadTrigger exactFillRootNode="unloadTriggerProducts" fillTypes="FLOUR BREAD CAKE BUTTER CHEESE FABRIC HONEY SUGAR CLOTHES CEREAL SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL GRAPE OLIVE RAISINS GRAPEJUICE CHOCOLATE FURNITURE STRAWBERRY LETTUCE TOMATO EGG MILK" >
+        <unloadTrigger exactFillRootNode="unloadTriggerProducts" fillTypes="FLOUR BREAD CAKE BUTTER CHEESE FABRIC HONEY SUGAR CLOTHES CEREAL SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL GRAPE OLIVE RAISINS GRAPEJUICE CHOCOLATE FURNITURE STRAWBERRY LETTUCE TOMATO EGG MILK CUCUMBER CAULIFLOWER ONION" >
             <baleTrigger triggerNode="baleTriggerProducts" deleteLitersPerSecond="10000" />
         </unloadTrigger>
 
@@ -78,6 +78,9 @@
         <fillType name="EGG"              priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="MILK"             priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="POTATO"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CUCUMBER"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CAULIFLOWER"      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="ONION"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
     </sellingStation>
 
     <i3dMappings>

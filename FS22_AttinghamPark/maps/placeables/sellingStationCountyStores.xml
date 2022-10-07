@@ -47,7 +47,7 @@
     </hotspots>
 
     <sellingStation node="sellingStationProducts" supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
-        <unloadTrigger exactFillRootNode="unloadTriggerProducts" fillTypes="FLOUR BREAD CAKE BUTTER CHEESE HONEY SUGAR CEREAL SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL GRAPE OLIVE RAISINS GRAPEJUICE CHOCOLATE STRAWBERRY LETTUCE TOMATO EGG" >
+        <unloadTrigger exactFillRootNode="unloadTriggerProducts" fillTypes="FLOUR BREAD CAKE BUTTER CHEESE HONEY SUGAR CEREAL SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL GRAPE OLIVE RAISINS GRAPEJUICE CHOCOLATE STRAWBERRY LETTUCE TOMATO EGG CUCUMBER CAULIFLOWER ONION" >
             <baleTrigger triggerNode="baleTriggerProducts" deleteLitersPerSecond="10000" />
         </unloadTrigger>
 
@@ -85,6 +85,9 @@
         <fillType name="SUGARCANE"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="OAT"              priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="SORGHUM"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CUCUMBER"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CAULIFLOWER"      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="ONION"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
     </sellingStation>
 
     <i3dMappings>
