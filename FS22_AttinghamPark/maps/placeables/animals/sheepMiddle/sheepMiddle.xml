@@ -8,7 +8,7 @@
             <function>$l10n_function_animalPenSheep</function>
         </functions>
         <canBeSold>true</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <lifetime>1000</lifetime>
         <dailyUpkeep>25</dailyUpkeep>
         <rotation>0</rotation>
@@ -33,7 +33,7 @@
     </storeData>
 
     <base>
-        <boughtWithFarmland>true</boughtWithFarmland>		
+        <boughtWithFarmland>true</boughtWithFarmland>
         <filename>maps/placeables/animals/sheepMiddle/sheepMiddle.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
     </base>

@@ -8,7 +8,7 @@
             <function>$l10n_function_animalPenCow</function>
         </functions>
         <canBeSold>true</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <lifetime>1000</lifetime>
         <dailyUpkeep>75</dailyUpkeep>
         <rotation>0</rotation>
@@ -33,7 +33,7 @@
     </storeData>
 
     <base>
-        <boughtWithFarmland>true</boughtWithFarmland>		
+        <boughtWithFarmland>true</boughtWithFarmland>
         <filename>maps/placeables/animals/crossFieldsDairy/cowsCrossFieldsDairy.i3d</filename>
         <canBeRenamed>false</canBeRenamed>
     </base>
@@ -93,94 +93,94 @@
     <hotspots>
         <hotspot type="COW" teleportNode="teleportNode" />
     </hotspots>
-	
+
     <animatedObjects>
 <animatedObject saveId="gateCF1">
 		<controls triggerNode="trigger1" posAction="ACTIVATE_HANDTOOL" posText="openGate" negText="closeGate" />
           <sounds>
                 <moving file="maps/sounds/click6.ogg" loops="0" volume="0.8" radius="25" innerRadius="3" fadeOu="0.25"/>
-            </sounds>		
+            </sounds>
         <animation initialTime="0" duration="5">
 	        <part node="gate1">
                 <keyFrame time="0.00" rotation="0 0 0" />
                 <keyFrame time="1" rotation="0 -90 0"  />
             </part>
         </animation>
-	</animatedObject> 	
+	</animatedObject>
 		<animatedObject saveId="gateCF2">
 		<controls triggerNode="trigger2" posAction="ACTIVATE_HANDTOOL" posText="openGate" negText="closeGate" />
           <sounds>
                 <moving file="maps/sounds/click6.ogg" loops="0" volume="0.8" radius="25" innerRadius="3" fadeOu="0.25"/>
-            </sounds>		
+            </sounds>
         <animation initialTime="0" duration="5">
 	        <part node="gate2">
                 <keyFrame time="0.00" rotation="0 0 0" />
                 <keyFrame time="1" rotation="0 130 0"  />
             </part>
         </animation>
-	</animatedObject> 
+	</animatedObject>
 <animatedObject saveId="gateCF3">
 		<controls triggerNode="trigger3" posAction="ACTIVATE_HANDTOOL" posText="openGate" negText="closeGate" />
           <sounds>
                 <moving file="maps/sounds/click6.ogg" loops="0" volume="0.8" radius="25" innerRadius="3" fadeOu="0.25"/>
-            </sounds>		
+            </sounds>
         <animation initialTime="0" duration="5">
 	        <part node="gate3">
                 <keyFrame time="0.00" rotation="0 0 0" />
                 <keyFrame time="1" rotation="0 -90 0"  />
             </part>
         </animation>
-	</animatedObject> 	
+	</animatedObject>
 		<animatedObject saveId="gateCF4">
 		<controls triggerNode="trigger4" posAction="ACTIVATE_HANDTOOL" posText="openGate" negText="closeGate" />
           <sounds>
                 <moving file="maps/sounds/click6.ogg" loops="0" volume="0.8" radius="25" innerRadius="3" fadeOu="0.25"/>
-            </sounds>		
+            </sounds>
         <animation initialTime="0" duration="5">
 	        <part node="gate4">
                 <keyFrame time="0.00" rotation="0 0 0" />
                 <keyFrame time="1" rotation="0 130 0"  />
             </part>
         </animation>
-	</animatedObject> 
+	</animatedObject>
 		<animatedObject saveId="gateCF5">
 		<controls triggerNode="trigger5" posAction="ACTIVATE_HANDTOOL" posText="openGate" negText="closeGate" />
           <sounds>
                 <moving file="maps/sounds/click6.ogg" loops="0" volume="0.8" radius="25" innerRadius="3" fadeOu="0.25"/>
-            </sounds>		
+            </sounds>
         <animation initialTime="0" duration="5">
 	        <part node="gate5">
                 <keyFrame time="0.00" rotation="0 0 0" />
                 <keyFrame time="1" rotation="0 108 0"  />
             </part>
         </animation>
-	</animatedObject> 
+	</animatedObject>
 <animatedObject saveId="gateCF6">
 		<controls triggerNode="trigger6" posAction="ACTIVATE_HANDTOOL" posText="openGate" negText="closeGate" />
           <sounds>
                 <moving file="maps/sounds/click6.ogg" loops="0" volume="0.8" radius="25" innerRadius="3" fadeOu="0.25"/>
-            </sounds>		
+            </sounds>
         <animation initialTime="0" duration="5">
 	        <part node="gate6">
                 <keyFrame time="0.00" rotation="0 0 0" />
                 <keyFrame time="1" rotation="0 90 0"  />
             </part>
         </animation>
-	</animatedObject> 	
+	</animatedObject>
 		<animatedObject saveId="gateCF7">
 		<controls triggerNode="trigger7" posAction="ACTIVATE_HANDTOOL" posText="closeGate" negText="openGate" />
           <sounds>
                 <moving file="maps/sounds/gate_loop.wav" loops="0" linkNode="gate7" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
                 <posEnd file="maps/sounds/gate_opened.wav" linkNode="1" volume="0.8" radius="25" innerRadius="3" />
                 <negEnd file="maps/sounds/gate_closed.wav" linkNode="1" volume="0.8" radius="25" innerRadius="3" />
-            </sounds>		
+            </sounds>
         <animation initialTime="0" duration="5">
 	        <part node="gate7">
                 <keyFrame time="0.00" rotation="0 108 0" />
                 <keyFrame time="1" rotation="0 0 0"  />
             </part>
         </animation>
-	</animatedObject> 
+	</animatedObject>
 </animatedObjects>
 
     <infoTrigger triggerNode="infoTrigger" />
@@ -207,12 +207,12 @@
             <navigation rootNode="navigationRootNode" filename="maps/placeables/animals/crossFieldsDairy/cowsCrossFieldsDairyNavMesh.i3d" />
             <loadingTrigger node="loadingTrigger" />
         </animals>
-		
+
         <straw>
             <manure factor="1.5" />
             <strawPlane node="strawPlane" minY="0" maxY="0.24" colorChange="false" />
         </straw>
-		
+
         <liquidManure />
 
         <food capacity="120000" >

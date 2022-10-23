@@ -8,7 +8,7 @@
             <function>$l10n_function_animalPenCow</function>
         </functions>
         <canBeSold>true</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <lifetime>1000</lifetime>
         <dailyUpkeep>75</dailyUpkeep>
         <rotation>0</rotation>
@@ -33,7 +33,7 @@
     </storeData>
 
     <base>
-        <boughtWithFarmland>true</boughtWithFarmland>		
+        <boughtWithFarmland>true</boughtWithFarmland>
         <filename>maps/placeables/animals/bromptonFarmhouse/cowsBromptonFarmhouse.i3d</filename>
         <canBeRenamed>false</canBeRenamed>
     </base>
@@ -93,32 +93,32 @@
     <hotspots>
         <hotspot type="COW" teleportNode="teleportNode" />
     </hotspots>
-	
+
     <animatedObjects>
 <animatedObject saveId="gateBR1">
 		<controls triggerNode="trigger1" posAction="ACTIVATE_HANDTOOL" posText="openGate" negText="closeGate" />
           <sounds>
                 <moving file="maps/sounds/click6.ogg" loops="0" volume="0.8" radius="25" innerRadius="3" fadeOu="0.25"/>
-            </sounds>		
+            </sounds>
         <animation initialTime="0" duration="5">
 	        <part node="gate1">
                 <keyFrame time="0.00" rotation="0 0 0" />
                 <keyFrame time="1" rotation="0 -90 0"  />
             </part>
         </animation>
-	</animatedObject> 	
+	</animatedObject>
 		<animatedObject isaveId="gateBR2">
 		<controls triggerNode="trigger2" posAction="ACTIVATE_HANDTOOL" posText="openGate" negText="closeGate" />
           <sounds>
                 <moving file="maps/sounds/click6.ogg" loops="0" volume="0.8" radius="25" innerRadius="3" fadeOu="0.25"/>
-            </sounds>		
+            </sounds>
         <animation initialTime="0" duration="5">
 	        <part node="gate2">
                 <keyFrame time="0.00" rotation="0 0 0" />
                 <keyFrame time="1" rotation="0 108 0"  />
             </part>
         </animation>
-	</animatedObject> 
+	</animatedObject>
 <animatedObject saveId="gateBR3" >
  <animation duration="6">
             <part node="gate3Left">
@@ -135,9 +135,9 @@
         <moving file="maps/sounds/click6.wav" loops="1" linkNode="gate3Right" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
      </sounds>
 </animatedObject>
-	
+
 </animatedObjects>
-	
+
 
     <infoTrigger triggerNode="infoTrigger" />
 
@@ -163,12 +163,12 @@
             <navigation rootNode="navigationRootNode" filename="maps/placeables/animals/bromptonFarmhouse/cowsBromptonFarmhouseNavMesh.i3d" />
             <loadingTrigger node="loadingTrigger" />
         </animals>
-		
+
         <straw>
             <manure factor="1.5" />
             <strawPlane node="strawPlane" minY="-0.318" maxY="0" colorChange="false" />
         </straw>
-		
+
         <liquidManure />
 
         <food capacity="80000" >
@@ -243,7 +243,7 @@
         <i3dMapping id="trigger3" node="0>18|0|18|0" />
         <i3dMapping id="gate3Left" node="0>18|0|18|1" />
         <i3dMapping id="gate3Right" node="0>18|0|18|2" />
-		
-		
+
+
     </i3dMappings>
 </placeable>

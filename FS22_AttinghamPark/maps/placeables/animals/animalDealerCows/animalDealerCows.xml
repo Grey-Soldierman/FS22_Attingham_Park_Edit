@@ -8,7 +8,7 @@
             <function>$l10n_function_animalPenCow</function>
         </functions>
         <canBeSold>true</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <lifetime>1000</lifetime>
         <dailyUpkeep>75</dailyUpkeep>
         <rotation>0</rotation>

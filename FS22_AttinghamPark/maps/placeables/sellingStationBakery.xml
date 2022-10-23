@@ -5,7 +5,7 @@
         <image>maps/placeables/storeImage/bakery.dds</image>
         <price>125000</price>
         <canBeSold>false</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>NONE</brand>
@@ -75,7 +75,7 @@
                     <output fillType="CAKE" amount="5" />
                 </outputs>
             </production>
-			
+
             <production id="cereal" name="$l10n_fillType_cereal" cyclesPerHour="90" costsPerActiveHour="5">
                 <inputs>
                     <input fillType="HONEY" amount="1" />

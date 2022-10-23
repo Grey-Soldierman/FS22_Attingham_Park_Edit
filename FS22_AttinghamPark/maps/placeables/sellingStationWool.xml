@@ -5,7 +5,7 @@
         <price>80000</price>
         <image>maps/placeables/storeImage/urbanSheep.dds</image>
         <canBeSold>false</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>NONE</brand>
@@ -78,7 +78,7 @@
                     <output fillType="CLOTHES" amount="1" />
                 </outputs>
             </production>
-			
+
         </productions>
 
         <storage isExtension="false" fillLevelSyncThreshold="50">

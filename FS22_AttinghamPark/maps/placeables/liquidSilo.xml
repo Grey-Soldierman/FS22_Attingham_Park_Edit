@@ -6,7 +6,7 @@
         <price>0</price>
         <lifetime>1000</lifetime>
         <canBeSold>true</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <rotation>0</rotation>
         <brand>NONE</brand>
         <species>placeable</species>
@@ -74,7 +74,7 @@
 
         <unloadingStation supportsExtension="true" storageRadius="50" >
             <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypeCategories="SPRAYER SLURRYTANK" aiNode="aiUnloadingNode">
-			</unloadTrigger>        
+			</unloadTrigger>
 		</unloadingStation>
 
         <storages>
@@ -121,6 +121,6 @@
 
     </i3dMappings>
 
-  
+
 
 </placeable>

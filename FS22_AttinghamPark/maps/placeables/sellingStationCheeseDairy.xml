@@ -5,7 +5,7 @@
         <image>maps/placeables/storeImage/dairy.dds</image>
         <price>50000</price>
         <canBeSold>false</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>NONE</brand>

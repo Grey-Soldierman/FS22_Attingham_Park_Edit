@@ -8,7 +8,7 @@
         <image>$data/placeables/lizard/bunkerSilo/bunkerSiloMedium/store_bunkerSiloMedium.png</image>
         <price>60000</price>
         <canBeSold>true</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <dailyUpkeep>60</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
@@ -33,7 +33,7 @@
     </storeData>
 
     <base>
-        <boughtWithFarmland>true</boughtWithFarmland>		
+        <boughtWithFarmland>true</boughtWithFarmland>
         <filename>maps/placeables/bunkerSiloMedium.i3d</filename>
     </base>
 

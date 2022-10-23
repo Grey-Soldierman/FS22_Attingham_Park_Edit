@@ -8,7 +8,7 @@
             <function>$l10n_function_animalPenChicken</function>
         </functions>
         <canBeSold>true</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <lifetime>1000</lifetime>
         <dailyUpkeep>10</dailyUpkeep>
         <rotation>0</rotation>
@@ -33,7 +33,7 @@
     </storeData>
 
     <base>
-        <boughtWithFarmland>true</boughtWithFarmland>		
+        <boughtWithFarmland>true</boughtWithFarmland>
         <filename>maps/placeables/animals/bromptonFarmhouse/chickenBarnSmall.i3d</filename>
         <canBeRenamed>false</canBeRenamed>
     </base>

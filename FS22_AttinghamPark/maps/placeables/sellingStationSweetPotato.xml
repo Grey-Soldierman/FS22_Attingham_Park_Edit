@@ -5,7 +5,7 @@
         <image>maps/placeables/storeImage/sweetPotato.dds</image>
         <price>1</price>
         <canBeSold>false</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>NONE</brand>
@@ -52,7 +52,7 @@
         </unloadTrigger>
 
         <unloadTrigger exactFillRootNode="unloadTriggerGrain" aiNode="unloadTriggerAINode" fillTypes="POTATO SUGARBEET_CUT SUGARBEET" />
-		
+
         <fillType name="HONEY"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="SUGAR"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 
@@ -60,9 +60,9 @@
         <fillType name="POTATO"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="SUGARBEET_CUT"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="SUGARBEET"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-		
-		
-		
+
+
+
     </sellingStation>
 
     <i3dMappings>

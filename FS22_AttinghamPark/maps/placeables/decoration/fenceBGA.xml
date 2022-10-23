@@ -8,7 +8,7 @@
         </functions>
         <price>0</price>
         <canBeSold>true</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>LIZARD</brand>
@@ -59,7 +59,7 @@
             <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
         </updateAreas>
     </ai>
-    
+
     <i3dMappings>
         <i3dMapping id="clearArea1Start" node="0>0|0" />
         <i3dMapping id="clearArea1Width" node="0>0|0|0" />

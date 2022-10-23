@@ -7,7 +7,7 @@
         </functions>
         <image>$data/store/store_empty.png</image>
         <canBeSold>false</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <price>7800</price>
         <dailyUpkeep>200</dailyUpkeep>
         <lifetime>1000</lifetime>
@@ -29,7 +29,7 @@
     </storeData>
 
     <base>
-        <boughtWithFarmland>true</boughtWithFarmland>		
+        <boughtWithFarmland>true</boughtWithFarmland>
         <filename>maps/placeables/fishery.i3d</filename>
     </base>
 

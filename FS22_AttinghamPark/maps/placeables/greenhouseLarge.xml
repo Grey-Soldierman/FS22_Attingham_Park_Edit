@@ -7,7 +7,7 @@
         </functions>
         <image>$data/placeables/lizard/greenhouses/greenhouseLarge/store_greenhouseLarge.png</image>
         <price>10000</price>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <dailyUpkeep>100</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
@@ -30,10 +30,10 @@
         <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
         <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
     </storeData>
-	
+
 
     <base>
-        <boughtWithFarmland>true</boughtWithFarmland>		
+        <boughtWithFarmland>true</boughtWithFarmland>
         <filename>$data/placeables/lizard/greenhouses/greenhouseLarge/greenhouseLarge.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
     </base>

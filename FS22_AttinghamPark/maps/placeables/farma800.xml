@@ -6,7 +6,7 @@
             <function>$l10n_function_farmSilo</function>
         </functions>
         <canBeSold>true</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <image>maps/placeables/storeImage/siloMH.dds</image>
         <price>147000</price>
         <dailyUpkeep>150</dailyUpkeep>
@@ -29,7 +29,7 @@
     </storeData>
 
     <base>
-        <boughtWithFarmland>true</boughtWithFarmland>		
+        <boughtWithFarmland>true</boughtWithFarmland>
         <filename>maps/placeables/uniaFarma800.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
     </base>

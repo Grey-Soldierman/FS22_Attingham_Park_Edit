@@ -8,7 +8,7 @@
             <function>$l10n_function_animalPenHorse</function>
         </functions>
         <canBeSold>true</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <lifetime>1000</lifetime>
         <dailyUpkeep>150</dailyUpkeep>
         <rotation>0</rotation>
@@ -33,7 +33,7 @@
     </storeData>
 
     <base>
-        <boughtWithFarmland>true</boughtWithFarmland>		
+        <boughtWithFarmland>true</boughtWithFarmland>
         <filename>maps/placeables/animals/malthouseFarm/horsesMalthouseFarm.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
     </base>
@@ -185,8 +185,8 @@
                 <moving file="maps/sounds/gate_loop.wav" loops="0" linkNode="door1A" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
                 <posEnd file="maps/sounds/gate_opened.wav" linkNode="door1A" volume="0.8" radius="25" innerRadius="3" />
                 <negEnd file="maps/sounds/gate_closed.wav" linkNode="door1A" volume="0.8" radius="25" innerRadius="3" />
-            </sounds>		
-</animatedObject> 
+            </sounds>
+</animatedObject>
 	<animatedObject saveId="door2">
         <animation  duration="5">
 	        <part node="door2A">
@@ -199,8 +199,8 @@
                 <moving file="maps/sounds/gate_loop.wav" loops="0" linkNode="door2A" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
                 <posEnd file="maps/sounds/gate_opened.wav" linkNode="door2A" volume="0.8" radius="25" innerRadius="3" />
                 <negEnd file="maps/sounds/gate_closed.wav" linkNode="door2A" volume="0.8" radius="25" innerRadius="3" />
-            </sounds>		
-</animatedObject> 
+            </sounds>
+</animatedObject>
 </animatedObjects>
 
 

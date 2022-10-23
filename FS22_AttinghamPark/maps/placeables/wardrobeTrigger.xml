@@ -6,7 +6,7 @@
         </functions>
         <image>maps/placeables/storeImage/wardrobe.dds</image>
         <canBeSold>true</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <price>1</price>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
@@ -31,7 +31,7 @@
     </storeData>
 
     <base>
-        <boughtWithFarmland>true</boughtWithFarmland>		
+        <boughtWithFarmland>true</boughtWithFarmland>
         <filename>maps/placeables/wardrobeTriggerPlaceable.i3d</filename>
     </base>
 

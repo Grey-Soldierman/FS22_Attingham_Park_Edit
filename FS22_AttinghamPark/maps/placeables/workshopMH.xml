@@ -8,7 +8,7 @@
             <function>$l10n_function_workshop</function>
         </functions>
         <canBeSold>true</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <dailyUpkeep>50</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
@@ -29,7 +29,7 @@
     </storeData>
 
     <base>
-        <boughtWithFarmland>true</boughtWithFarmland>		
+        <boughtWithFarmland>true</boughtWithFarmland>
         <filename>maps/placeables/workshopMH.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
     </base>
@@ -53,7 +53,7 @@
             <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
         </levelAreas>
     </leveling>
-	
+
     <indoorAreas>
         <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
     </indoorAreas>

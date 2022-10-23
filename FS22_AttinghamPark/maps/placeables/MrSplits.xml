@@ -8,7 +8,7 @@
         <image>maps/placeables/storeImage/mrSplits.dds</image>
         <price>60000</price>
         <canBeSold>false</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>NONE</brand>
@@ -167,7 +167,7 @@
         <i3dMapping id="clearAreaHeight" node="0>8|0|1" />
         <i3dMapping id="testArea1Start" node="0>9|0" />
         <i3dMapping id="testArea1End" node="0>9|0|0" />
-		
-		
+
+
     </i3dMappings>
 </placeable>

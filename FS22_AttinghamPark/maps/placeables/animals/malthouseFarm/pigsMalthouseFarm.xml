@@ -8,7 +8,7 @@
             <function>$l10n_function_animalPenPig</function>
         </functions>
         <canBeSold>true</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <lifetime>1000</lifetime>
         <dailyUpkeep>150</dailyUpkeep>
         <rotation>0</rotation>
@@ -33,7 +33,7 @@
     </storeData>
 
     <base>
-        <boughtWithFarmland>true</boughtWithFarmland>		
+        <boughtWithFarmland>true</boughtWithFarmland>
         <filename>maps/placeables/animals/malthouseFarm/pigsMalthouseFarm.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
     </base>
@@ -97,7 +97,7 @@
     <hotspots>
         <hotspot type="PIG" teleportNode="teleportNode" />
     </hotspots>
-	
+
     <animatedObjects>
 <animatedObject saveId="pigGate" >
     <animation duration="3">
@@ -116,7 +116,7 @@
                 <posEnd file="maps/sounds/gate_opened.wav" linkNode="pigGateOpenableDoor01" innerRadius="5" outerRadius="25"/>
                 <negEnd file="maps/sounds/gate_closed.wav" linkNode="pigGateOpenableDoor01" innerRadius="5" outerRadius="25"/>
             </sounds>
-</animatedObject>	
+</animatedObject>
 </animatedObjects>
 
 

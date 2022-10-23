@@ -8,7 +8,7 @@
             <function>$l10n_function_animalPenSheep</function>
         </functions>
         <canBeSold>true</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <lifetime>1000</lifetime>
         <dailyUpkeep>25</dailyUpkeep>
         <rotation>0</rotation>
@@ -33,7 +33,7 @@
     </storeData>
 
     <base>
-        <boughtWithFarmland>true</boughtWithFarmland>		
+        <boughtWithFarmland>true</boughtWithFarmland>
         <filename>maps/placeables/animals/crossFieldsDairy/sheepCrossFieldsDairy.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
     </base>
@@ -92,7 +92,7 @@
             <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
         </updateAreas>
     </ai>
-	
+
     <animatedObjects>
 		<animatedObject saveId="sheepGate">
 		<controls triggerNode="trigger1" posAction="ACTIVATE_HANDTOOL" posText="openGate" negText="closeGate" />
@@ -100,15 +100,15 @@
                 <moving file="maps/sounds/gate_loop.wav" loops="0" linkNode="gate1" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
                 <posEnd file="maps/sounds/gate_opened.wav" linkNode="1" volume="0.8" radius="25" innerRadius="3" />
                 <negEnd file="maps/sounds/gate_closed.wav" linkNode="1" volume="0.8" radius="25" innerRadius="3" />
-            </sounds>		
+            </sounds>
         <animation initialTime="0" duration="5">
 	        <part node="gate1">
                 <keyFrame time="0.00" rotation="0 0 0" />
                 <keyFrame time="1" rotation="0 120 0"  />
             </part>
         </animation>
-	</animatedObject> 
-	
+	</animatedObject>
+
 </animatedObjects>
 
     <hotspots>

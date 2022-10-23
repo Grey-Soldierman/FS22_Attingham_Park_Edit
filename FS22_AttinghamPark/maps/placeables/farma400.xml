@@ -10,7 +10,7 @@
         <dailyUpkeep>120</dailyUpkeep>
         <lifetime>1000</lifetime>
         <canBeSold>true</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <rotation>0</rotation>
         <brand>UNIA</brand>
         <species>placeable</species>
@@ -29,7 +29,7 @@
     </storeData>
 
     <base>
-        <boughtWithFarmland>true</boughtWithFarmland>		
+        <boughtWithFarmland>true</boughtWithFarmland>
         <filename>maps/placeables/uniaFarma400.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
     </base>
