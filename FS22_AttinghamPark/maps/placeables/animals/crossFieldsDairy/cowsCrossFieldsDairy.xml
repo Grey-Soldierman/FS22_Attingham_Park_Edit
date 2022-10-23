@@ -60,6 +60,9 @@
 
         <paintAreas>
             <paintArea startNode="paintArea1Start" widthNode="paintArea1Width" heightNode="paintArea1Height" groundType="grass" />
+            <paintArea startNode="foliageArea1Start" widthNode="foliageArea1Width" heightNode="foliageArea1Height" groundType="grassShort" />
+            <paintArea startNode="foliageArea2Start" widthNode="foliageArea2Width" heightNode="foliageArea2Height" groundType="grassShort" />
+            <paintArea startNode="foliageArea3Start" widthNode="foliageArea3Width" heightNode="foliageArea3Height" groundType="grassShort" />
         </paintAreas>
     </leveling>
 
